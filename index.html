@@ -85,7 +85,7 @@
         
   
     <h1 itemprop="name">
-      <a class="p-name article-title" href="/2022/07/10/csapp-3/">csapp</a>
+      <a class="p-name article-title" href="/2022/07/10/csapp-3/">csapp(4)</a>
     </h1>
   
 
@@ -93,11 +93,15 @@
     
     <div class="e-content article-entry" itemprop="articleBody">
       
-        
+        <p>第四章</p>
+<blockquote>
+<p>4.1.1 整数乘法运算<br>         1、通常高级语言中两个n位整数相乘得到的结果通常也是一个n位整数，也即结果只取2n位乘积中的低n位。<br>              所以在计算机内部，x^2不一定&gt;0：x带符号不一定。<br>                                                                    x为浮点数则一定。<br>         2、如何判断返回的z是正确值，<br>              int z&#x3D;x<em>y;<br>              return z;<br>              在这两条语句中添加当!x||z&#x2F;x&#x3D;&#x3D;y为真时，是正确的<br>         3、x</em>y的高n位可以用来判断溢出，<br>             1.无符号：若高n位全为0，则不溢出，否则溢出。<br>             2.带符号：若高n位全为0或全为1且等于低n位的最高位，则不溢出。<br>         4、堆溢出漏洞<br>              攻击者可构造特殊参数来触发整数溢出，以一段预设信息覆盖一个已分配的堆缓冲区，造成远程服务器崩溃或者改变内存数据并执行任意代码。<br>4.2.1 整数除法运算<br>         1、带符号：n位整数除法以n位整数，除-2^(n-1)&#x2F;-1&#x3D;2^(n-1)外，其余情况都不会发生溢出。<br>         2、整除0的结果无法用一个机器数表示。<br>         3、不能整除时，采用向0舍入，即截断。<br>              无符号：移出的低位直接舍弃。<br>              带符号负整数：加偏移量（2^k-1），再右移k位。<br>                                     如：-14&#x2F;4&#x3D;-3-&gt;(-14+2^2-1)&#x2F;4&#x3D;-3。<br>4.3.1 浮点加减运算<br>        1、两个规格化浮点数分别位A&#x3D;Ma<em>2^Ea,B&#x3D;Mb</em>2Eb<br>             A+-B&#x3D;(Ma+-Mb<em>2^-(Ea-Eb))<em>2Ea<br>             A</em>B&#x3D;(Ma</em>Mb)<em>2^(Ea+Eb)<br>             A&#x2F;B&#x3D;(Ma&#x2F;Mb)<em>2(Ea-Eb)<br>             上述运算结果有可能出现一下几种情况：<br>             阶码上溢：SP最大指数为127。<br>             阶码下溢：SP最小指数为-126。<br>          2、对于一个浮点数除以0<br>                1.#INF00表示正无穷。<br>                 -1.#INF00表示负无穷。<br>          重点：浮点数加减法基本要点：<br>                   假定Xm，Ym分别是X和Y的尾数，Xe和Ye分别是X和Y的阶码<br>                   （1）求阶差：delta e&#x3D;Ye-Xe（若Ye&gt;Xe，结果的阶码为Ye）<br>                   （2）对阶：将Xm右移delta e位，尾数变为Xm</em>2^(Xe-Ye)（保留右移部分附件位）<br>                   （3）尾数加减：Xm</em>2(Xe-Ye)+-Ym<br>                   （4）规格化：<br>                           1.当尾数高位为0，则需左规：尾数左移一次，阶码减1，知道MSB（最高位）为1<br>                              每次阶码减1后，要判断阶码是否下溢（比最小可表示的阶码还要小）<br>                           2.当尾数最高位有进位，需右规：尾数右移一次，阶码加1，知道MSB为1<br>                              每次阶码加1后要判断阶码是否上溢（比最大可表示的阶码还要大）<br>4.3.2 浮点运算的精度<br>        中间结果须在右边加2个附加位<br>        Guard（保护位）：在符号位右边的位。<br>        Round（舍入位）：在保护位右边的位。</p>
+</blockquote>
+
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2022/07/10/csapp-3/" data-id="cl5us41pt0004ugwpatc597ev" data-title="csapp" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2022/07/10/csapp-3/" data-id="cl5us41pt0004ugwpatc597ev" data-title="csapp(4)" class="article-share-link">Share</a>
       
       
       
@@ -205,7 +209,7 @@
         
   
     <h1 itemprop="name">
-      <a class="p-name article-title" href="/2022/07/10/csapp/">csapp</a>
+      <a class="p-name article-title" href="/2022/07/10/csapp/">csapp(1)</a>
     </h1>
   
 
@@ -223,7 +227,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2022/07/10/csapp/" data-id="cl5us41pl0003ugwp0m5ihot1" data-title="csapp" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2022/07/10/csapp/" data-id="cl5us41pl0003ugwp0m5ihot1" data-title="csapp(1)" class="article-share-link">Share</a>
       
       
       
@@ -317,7 +321,7 @@
       <ul>
         
           <li>
-            <a href="/2022/07/10/csapp-3/">csapp</a>
+            <a href="/2022/07/10/csapp-3/">csapp(4)</a>
           </li>
         
           <li>
@@ -329,7 +333,7 @@
           </li>
         
           <li>
-            <a href="/2022/07/10/csapp/">csapp</a>
+            <a href="/2022/07/10/csapp/">csapp(1)</a>
           </li>
         
           <li>
