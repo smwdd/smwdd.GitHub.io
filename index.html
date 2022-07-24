@@ -71,6 +71,48 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-csapp-lab1" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2022/07/24/csapp-lab1/" class="article-date">
+  <time class="dt-published" datetime="2022-07-24T05:57:57.000Z" itemprop="datePublished">2022-07-24</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2022/07/24/csapp-lab1/">csapp lab1</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p>csapp lab1</p>
+<blockquote>
+<p>1、异或运算<br>     return <del>(</del>x&amp;<del>y)&amp;</del>(x&amp;y);<br>2、最小值<br>     return 1&lt;&lt;31;<br>3、最大值<br>     return !((<del>(x+1)^x))&amp;!!(x+1);<br>4、奇数位是奇数<br>     x&#x3D;x|(x&lt;&lt;8);<br>     x&#x3D;x|(x&lt;&lt;16);<br>5、位与运算<br>     return ~((</del>x)|(<del>y));<br>6、偶数位是偶数<br>     int x&#x3D;85; &#x2F;&#x2F;01010101<br>     int y&#x3D;(x&lt;&lt;8);<br>     x&#x3D;x|y;<br>     y&#x3D;(x&lt;&lt;16);<br>     x&#x3D;x|y;<br>7、将一个32位数字压缩成16位数<br>     int x;<br>     int y&#x3D;x&gt;&gt;15;<br>     return !((y&gt;&gt;16))^y;<br>8、得到-1<br>     return ~0;<br>9、判断是否所有偶数位全是1<br>     int x;<br>     int y&#x3D;0xAA;<br>     y&#x3D;y|y&lt;&lt;8;<br>     y&#x3D;y|y&lt;&lt;16;<br>     rerurn !</del>(x|y);<br>10、交换第m个字节和第n个字节<br>       int nn&#x3D;n&lt;&lt;3;<br>       int mm&#x3D;m&lt;&lt;3;<br>       int p&#x3D;((x&gt;&gt;mm)^(x&gt;&gt;nn))&amp;0xFF;<br>       return x^((p&lt;&lt;mm)|(p&lt;&lt;nn));<br>11、将整数的所有二进制位都置为最低那位<br>       return (x&lt;&lt;31)&gt;&gt;31;<br>12、求得x&#x2F;2^n，并且向0取整<br>       int y&#x3D;(x&gt;&gt;31);<br>       x+&#x3D;y&amp;((1&lt;&lt;n)+<del>0);<br>       x&#x3D;x&gt;&gt;n;<br>       return x;<br>13、返回一个数，这个数的第一位1与传过来的x的第一个1的位置一样 且其他位置都是0<br>       return (</del>x+1)&amp;x;<br>14、获得一个面具（掩码），这个面具（掩码）在对高位和最低位之间为1，其余地方为0<br>       int i&#x3D;<del>0;<br>       return (((i&lt;&lt;highbit)&lt;&lt;1)^(i&lt;&lt;lowbit))&amp;(i&lt;&lt;lowbit);<br>15、判断x&lt;y是否成立<br>       int z&#x3D;</del>y;<br>       return (((x+z+1)&amp;(x^z)|(x&amp;z))&gt;&gt;31)&amp;0x1;<br>16、实现逻辑右移<br>       int y1&#x3D;(((x&gt;&gt;31)&lt;&lt;31)&gt;&gt;(n))&lt;&lt;1;<br>       return (x&gt;&gt;(n))^y1;<br>17、将一个数字乘以2 如果溢出则取Tmax或Tmin<br>       int a&#x3D;x&lt;&lt;1;<br>       int b&#x3D;a&gt;&gt;31;<br>       int c&#x3D;(x^a)&gt;&gt;31;<br>       int tmin&#x3D;1&lt;&lt;31;<br>       return ((<del>c)&amp;a)+(c&amp;(b+tmin));<br>18、判断两个函数相减是否会溢出<br>       int z;<br>       int m&#x3D;y;<br>       y&#x3D;(</del>y)+1;<br>       z&#x3D;x+y;<br>       z&#x3D;(z^x)&amp;(m^x);<br>       return !((z&gt;&gt;31)&amp;1);<br>19、实现！的功能<br>       int y&#x3D;((<del>x)&amp;(x+(</del>0)));<br>       return (y&gt;&gt;31)&amp;1;<br>20、判断是否是2的倍数<br>       return !(((x&amp;(~x+1))^x)|(!x)|(x&gt;&gt;31))；</p>
+</blockquote>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2022/07/24/csapp-lab1/" data-id="cl5ywvfto0000j4wpa8wa0p6g" data-title="csapp lab1" class="article-share-link">Share</a>
+      
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
     <article id="post-csapp-3" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
     <a href="/2022/07/10/csapp-3/" class="article-date">
@@ -321,6 +363,10 @@
       <ul>
         
           <li>
+            <a href="/2022/07/24/csapp-lab1/">csapp lab1</a>
+          </li>
+        
+          <li>
             <a href="/2022/07/10/csapp-3/">csapp(4)</a>
           </li>
         
@@ -334,10 +380,6 @@
         
           <li>
             <a href="/2022/07/10/csapp/">csapp(1)</a>
-          </li>
-        
-          <li>
-            <a href="/2022/07/04/hello-world/">Hello World</a>
           </li>
         
       </ul>
