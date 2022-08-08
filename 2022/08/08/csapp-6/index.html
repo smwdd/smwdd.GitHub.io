@@ -4,17 +4,17 @@
   <meta charset="utf-8">
   
   
-  <title>csapp(1) | Hexo</title>
+  <title>csapp(6) | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="第一章1、hello.c的一生。     hello.c源程序文本–&gt;预处理器（cpp）–&gt;hell.i修改了的源程序（文本）–&gt;汇编器（as）–&gt;链接器（id）–&gt;hello可执行的二进制目标程序。2、系统的硬件组成。     总线、I&#x2F;O（输入输出）设备、主存、处理器。3、高速缓存至关重要。     从磁盘复制内容到主存，这个过程因为两个部件的读取速度">
+  <meta name="description" content="第6章6.1.1 常用传送指令（1） 传送指令                通用数据传送指令                MOV：一般传送，包括movb、movw和movl等                MOVS：符号扩展与传送，如movsbw、movswl等                MOVZ：零扩展传送，如movzwl、movbl等                XCHG：数据交换">
 <meta property="og:type" content="article">
-<meta property="og:title" content="csapp(1)">
-<meta property="og:url" content="http://example.com/2022/07/10/csapp/index.html">
+<meta property="og:title" content="csapp(6)">
+<meta property="og:url" content="http://example.com/2022/08/08/csapp-6/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="第一章1、hello.c的一生。     hello.c源程序文本–&gt;预处理器（cpp）–&gt;hell.i修改了的源程序（文本）–&gt;汇编器（as）–&gt;链接器（id）–&gt;hello可执行的二进制目标程序。2、系统的硬件组成。     总线、I&#x2F;O（输入输出）设备、主存、处理器。3、高速缓存至关重要。     从磁盘复制内容到主存，这个过程因为两个部件的读取速度">
+<meta property="og:description" content="第6章6.1.1 常用传送指令（1） 传送指令                通用数据传送指令                MOV：一般传送，包括movb、movw和movl等                MOVS：符号扩展与传送，如movsbw、movswl等                MOVZ：零扩展传送，如movzwl、movbl等                XCHG：数据交换">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2022-07-10T06:52:30.000Z">
-<meta property="article:modified_time" content="2022-07-22T11:27:58.941Z">
+<meta property="article:published_time" content="2022-08-08T08:44:49.000Z">
+<meta property="article:modified_time" content="2022-08-08T08:45:56.868Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
   
@@ -73,10 +73,10 @@
 </header>
 
       <div class="outer">
-        <section id="main"><article id="post-csapp" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+        <section id="main"><article id="post-csapp-6" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
-    <a href="/2022/07/10/csapp/" class="article-date">
-  <time class="dt-published" datetime="2022-07-10T06:52:30.000Z" itemprop="datePublished">2022-07-10</time>
+    <a href="/2022/08/08/csapp-6/" class="article-date">
+  <time class="dt-published" datetime="2022-08-08T08:44:49.000Z" itemprop="datePublished">2022-08-08</time>
 </a>
     
   </div>
@@ -87,7 +87,7 @@
         
   
     <h1 class="p-name article-title" itemprop="headline name">
-      csapp(1)
+      csapp(6)
     </h1>
   
 
@@ -96,16 +96,16 @@
     <div class="e-content article-entry" itemprop="articleBody">
       
         <blockquote>
-<p>第一章<br>1、hello.c的一生。<br>     hello.c源程序文本–&gt;预处理器（cpp）–&gt;hell.i修改了的源程序（文本）–&gt;汇编器（as）–&gt;链接器（id）–&gt;hello可执行的二进制目标程序。<br>2、系统的硬件组成。<br>     总线、I&#x2F;O（输入输出）设备、主存、处理器。<br>3、高速缓存至关重要。<br>     从磁盘复制内容到主存，这个过程因为两个部件的读取速度差别较大，所以需要一个高速缓存做衔接来提升整体的读取速度。<br>4、进程，计算机科学中最重要和最成功的概念之一。<br>     进程是操作系统对一个正在运行的程序的抽象。在一个系统中可以同时运行多个进程。<br>5、线程。<br>     一个进程实际上可以由多个称为线程的执行单元组成，每个线程都在进程的上下文中。<br>6、计算机从底层到最上层其实是一层一层封装上去的<br>7、ISA指Instruction Set Architecture，即指令集体系结构，有时简称为指令系统。<br>总结、<br>系统不仅仅只是硬件。系统是硬件和系统软件互相交织的集合体，它们必须共同协作以达到运行应用的最终目的。</p>
+<p>第6章<br>6.1.1 常用传送指令<br>（1） 传送指令<br>                通用数据传送指令<br>                MOV：一般传送，包括movb、movw和movl等<br>                MOVS：符号扩展与传送，如movsbw、movswl等<br>                MOVZ：零扩展传送，如movzwl、movbl等<br>                XCHG：数据交换<br>                PUSH&#x2F;POP：入栈&#x2F;出栈，如pushl，pushw，popl，popw等<br>（2）地址传送指令<br>               LEA：加载有效地址，如leal（%edx,%eax）,%eax”的功能为<br>                        R[eax]&lt;-R[edx]+R[eax]，执行前，若R[edx]&#x3D;i<br>                        R[eax]&#x3D;j，则指令执行后，R[eax]&#x3D;i+j<br>（3）输入输出指令<br>               IN和OUT：I&#x2F;O端口寄存器之间的交换<br>（4）标志传送指令<br>               PUSHF&#x2F;POPF：将EFLAG压栈，或将栈顶内容送EFLAG<br>6.2.1 常用定点运算指令<br>（1）定点算术运算指令<br>              1.加&#x2F;减运算（影响标志、不区分无&#x2F;带符号）<br>                 ADD：加，包括addb、addw、addl等<br>                 SUB：减，包括subb、subw、subl等<br>（2）加1&#x2F;减1运算（影响除CF以外的标志、不区分无&#x2F;带符号）<br>               INC：加，减包括incb、incw、incl等<br>               DEC：减，包括decb、decw、decl等<br>（3）取负运算（影响标志、若对0取负，则结果为0且CF清0，否则CF置1）<br>               NEG：取负，包括cmpb、cmpw、cmpl等<br>（4）乘&#x2F;除运算（不影响标志，区分无&#x2F;带符号）<br>               MUL&#x2F;IMUL：无符号乘&#x2F;带符号乘<br>               DIV&#x2F;IDIV：带无符号除&#x2F;带符号除</p>
 </blockquote>
 <blockquote>
-<p>第二章<br>3、计算机内部所有信息都用二进制即0和1编码。<br>4、机器级数据分两大类<br>     1.数值数据：无符号整数、带符号整数、浮点数（实数）。<br>     2.非数值数据：逻辑数（包括位串）、西文字符和汉字。<br>5、真值和机器数<br>     1.机器数：用0和1编码的计算机内部的01序列。<br>     2.真值：真正的值，即：现实中带正负号的数。<br>6、机器内部用二进制数表示，在外面转换成16进制可以缩短长度，并且转换简单。<br>7、十进制转化为二进制，整数部分短除法，小数部分*2取整数部分、<br>8、一个负数的补码等于对应整数补码各位取反、末尾加一。</p>
+<p>6.2.2 加法运算的底层实现举例<br>        1.ALU里包含补码的加&#x2F;减器<br>           带符号整数加减，无符号整数加减。</p>
 </blockquote>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2022/07/10/csapp/" data-id="cl5us41pl0003ugwp0m5ihot1" data-title="csapp(1)" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2022/08/08/csapp-6/" data-id="cl6kie9vs0000tgwpaivrfcrq" data-title="csapp(6)" class="article-share-link">Share</a>
       
       
       
@@ -115,19 +115,10 @@
     
 <nav id="article-nav">
   
-    <a href="/2022/07/10/csapp-1/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Newer</strong>
-      <div class="article-nav-title">
-        
-          csapp(2)
-        
-      </div>
-    </a>
   
-  
-    <a href="/2022/07/04/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
+    <a href="/2022/08/08/csapp-7/" id="article-nav-older" class="article-nav-link-wrap">
       <strong class="article-nav-caption">Older</strong>
-      <div class="article-nav-title">Hello World</div>
+      <div class="article-nav-title">csapp(7)</div>
     </a>
   
 </nav>

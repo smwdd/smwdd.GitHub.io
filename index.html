@@ -71,6 +71,91 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-csapp-6" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2022/08/08/csapp-6/" class="article-date">
+  <time class="dt-published" datetime="2022-08-08T08:44:49.000Z" itemprop="datePublished">2022-08-08</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2022/08/08/csapp-6/">csapp(6)</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <blockquote>
+<p>第6章<br>6.1.1 常用传送指令<br>（1） 传送指令<br>                通用数据传送指令<br>                MOV：一般传送，包括movb、movw和movl等<br>                MOVS：符号扩展与传送，如movsbw、movswl等<br>                MOVZ：零扩展传送，如movzwl、movbl等<br>                XCHG：数据交换<br>                PUSH&#x2F;POP：入栈&#x2F;出栈，如pushl，pushw，popl，popw等<br>（2）地址传送指令<br>               LEA：加载有效地址，如leal（%edx,%eax）,%eax”的功能为<br>                        R[eax]&lt;-R[edx]+R[eax]，执行前，若R[edx]&#x3D;i<br>                        R[eax]&#x3D;j，则指令执行后，R[eax]&#x3D;i+j<br>（3）输入输出指令<br>               IN和OUT：I&#x2F;O端口寄存器之间的交换<br>（4）标志传送指令<br>               PUSHF&#x2F;POPF：将EFLAG压栈，或将栈顶内容送EFLAG<br>6.2.1 常用定点运算指令<br>（1）定点算术运算指令<br>              1.加&#x2F;减运算（影响标志、不区分无&#x2F;带符号）<br>                 ADD：加，包括addb、addw、addl等<br>                 SUB：减，包括subb、subw、subl等<br>（2）加1&#x2F;减1运算（影响除CF以外的标志、不区分无&#x2F;带符号）<br>               INC：加，减包括incb、incw、incl等<br>               DEC：减，包括decb、decw、decl等<br>（3）取负运算（影响标志、若对0取负，则结果为0且CF清0，否则CF置1）<br>               NEG：取负，包括cmpb、cmpw、cmpl等<br>（4）乘&#x2F;除运算（不影响标志，区分无&#x2F;带符号）<br>               MUL&#x2F;IMUL：无符号乘&#x2F;带符号乘<br>               DIV&#x2F;IDIV：带无符号除&#x2F;带符号除</p>
+</blockquote>
+<blockquote>
+<p>6.2.2 加法运算的底层实现举例<br>        1.ALU里包含补码的加&#x2F;减器<br>           带符号整数加减，无符号整数加减。</p>
+</blockquote>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2022/08/08/csapp-6/" data-id="cl6kie9vs0000tgwpaivrfcrq" data-title="csapp(6)" class="article-share-link">Share</a>
+      
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-csapp-7" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2022/08/08/csapp-7/" class="article-date">
+  <time class="dt-published" datetime="2022-08-08T08:43:27.000Z" itemprop="datePublished">2022-08-08</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2022/08/08/csapp-7/">csapp(7)</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <blockquote>
+<p>第七章<br>7.1.1 过程调用概述<br>一个c过程的大致结构如下<br>（1）准备阶段<br>               1.形成帧底：push指令和mov指令<br>               2.生成栈帧（如果需要的话）：sub指令或and指令<br>               3.保存现场（如果有被调用者保存寄存器）：mov指令<br>（2）过程（函数）体<br>               1.分配局部变量空间，并赋值<br>               2.具体处理逻辑，如果遇到函数调用时<br>                  准备参数：将实参送栈帧入口参数处<br>                  CALL指令：保存返回地址并转被调用函数<br>               3.在EAX中准备返回参数<br>（3）结束阶段<br>              1.退栈：leave指令或pop指令<br>              2.取返回地址返回：ret指令</p>
+</blockquote>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2022/08/08/csapp-7/" data-id="cl6kie9vv0001tgwp4prb4hq0" data-title="csapp(7)" class="article-share-link">Share</a>
+      
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
     <article id="post-csapp-5" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
     <a href="/2022/07/31/csapp-5/" class="article-date">
@@ -391,7 +476,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Archives</h3>
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/07/">July 2022</a></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/08/">August 2022</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/07/">July 2022</a></li></ul>
     </div>
   </div>
 
@@ -404,6 +489,14 @@
       <ul>
         
           <li>
+            <a href="/2022/08/08/csapp-6/">csapp(6)</a>
+          </li>
+        
+          <li>
+            <a href="/2022/08/08/csapp-7/">csapp(7)</a>
+          </li>
+        
+          <li>
             <a href="/2022/07/31/csapp-5/">csapp(5)</a>
           </li>
         
@@ -413,14 +506,6 @@
         
           <li>
             <a href="/2022/07/10/csapp-3/">csapp(4)</a>
-          </li>
-        
-          <li>
-            <a href="/2022/07/10/csapp-2/">csapp(3)</a>
-          </li>
-        
-          <li>
-            <a href="/2022/07/10/csapp-1/">csapp(2)</a>
           </li>
         
       </ul>
