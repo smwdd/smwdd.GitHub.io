@@ -71,6 +71,47 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-csapp-8" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2022/08/09/csapp-8/" class="article-date">
+  <time class="dt-published" datetime="2022-08-09T08:09:12.000Z" itemprop="datePublished">2022-08-09</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2022/08/09/csapp-8/">csapp(8)</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <blockquote>
+<p>第八章<br>8.1.1 数组的分配和访问<br>        1.buf是在静态区分配的数组，链接后，buf在可执行目标文件数据段中分配了空间<br>        2.aoto型数组分配在栈中，故数组的首址通过EBP来定位<br>8.2.1 结构类型的分配和访问<br>        （1）结构体成员在内存的存放和访问<br>                1.分配在栈中的auto结构型变量的首地址由EBP或ESP来定位<br>                2.分配在静态区的结构型变量首地址是一个确定的静态区地址<br>                3.结构型变量x各成员首地址可用“基址加偏移量”的寻址方式<br>        （2）结构体数据的分配和访问<br>                按值传递：1.开销大，因为需要对结构体成员整体从静态区复制到栈中，需要很多条mov或其他指令，从而执行时间更长，并占用更多空间和代码空间<br>8.3.1 数据的对齐方式<br>        （1）按边界对齐（若一个字为32位）<br>                 1.字地址：4的倍数（低两位为0）<br>                 2.半字地址：2的倍数（低位为0）<br>                 3.字节地址：任意<br>        （2）不按边界对齐<br>                坏处：可能会增加访存次数！<br>8.4.1 越界访问和缓冲区溢出攻击<br>        （1）数组存储区可看成是一个缓冲区，超越数组存储区范围的写入操作称为缓冲区溢出<br>                 例如：对于一个有10个元素的char型数组，其定义发缓冲区有10个字节。若写一个字符串到这个缓冲区，那么只要写入的字符串多于9个字符，就会发生写溢出</p>
+</blockquote>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2022/08/09/csapp-8/" data-id="cl6lwjzze0000xcwp580gavdm" data-title="csapp(8)" class="article-share-link">Share</a>
+      
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
     <article id="post-csapp-6" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
     <a href="/2022/08/08/csapp-6/" class="article-date">
@@ -489,6 +530,10 @@
       <ul>
         
           <li>
+            <a href="/2022/08/09/csapp-8/">csapp(8)</a>
+          </li>
+        
+          <li>
             <a href="/2022/08/08/csapp-6/">csapp(6)</a>
           </li>
         
@@ -502,10 +547,6 @@
         
           <li>
             <a href="/2022/07/24/csapp-lab1/">csapp lab1</a>
-          </li>
-        
-          <li>
-            <a href="/2022/07/10/csapp-3/">csapp(4)</a>
           </li>
         
       </ul>
