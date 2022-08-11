@@ -1,0 +1,940 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 6.2.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"example.com","root":"/","scheme":"Muse","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
+  </script>
+
+  <meta property="og:type" content="website">
+<meta property="og:title">
+<meta property="og:url" content="https://example.com/index.html">
+<meta property="og:site_name">
+<meta property="og:locale" content="en_US">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="https://example.com/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : true,
+    isPost : false,
+    lang   : 'en'
+  };
+</script>
+
+  <title></title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="Toggle navigation bar">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title"></h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives</a>
+
+  </li>
+  </ul>
+</nav>
+
+
+
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content index posts-expand">
+            
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="https://example.com/2022/08/11/csapp-10/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2022/08/11/csapp-10/" class="post-title-link" itemprop="url">csapp(10)</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+              
+
+              <time title="Created: 2022-08-11 15:02:04 / Modified: 15:03:33" itemprop="dateCreated datePublished" datetime="2022-08-11T15:02:04+08:00">2022-08-11</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <blockquote>
+<p>第十章<br>10.2.2 目标文件的三种视图<br>           （1）可重定位目标文件（.o）<br>                   其代码和数据可和其他可重定位文件合并为可执行文件<br>                   1.每个.o文件对应.c文件的生成<br>                   2.每个.o文件代码个数据地址都从0开始<br>           （2）可执行目标文件（linux默认为a.out，windows中的*.exe）<br>                   1.包含的代码和数据可以直接被复制到内存并执行<br>                   2.代码和数据地址为虚拟地址空间中的地址<br>           （3）共享的目标文件（linux中的*.so）<br>                   1.特殊的可重定位目标文件，能在运行时装入到内存并自动被链接，称为贡献库文件<br>                   2Windows中称为Dynamic Link Libraries(DLLs)<br>10.3.1 可重定位文件概述<br>          （1）.symtab节：存放函数名和全局变量（符号表）信息，不包括局部变量<br>          （2）.ret.data节：.data节的重定位信息，用于对模块使用或定义的全局变量进行重定位的信息<br>          （3）.debug节：调试用符号表<br>          （4）strtab节：包含symtab和debug节中符号及节名<br>          （5）Section header table（节头表）：每个节的节名、偏移和大小</p>
+</blockquote>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="https://example.com/2022/08/09/csapp-8/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2022/08/09/csapp-8/" class="post-title-link" itemprop="url">csapp(8)</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+              
+
+              <time title="Created: 2022-08-09 16:09:12 / Modified: 16:10:01" itemprop="dateCreated datePublished" datetime="2022-08-09T16:09:12+08:00">2022-08-09</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <blockquote>
+<p>第八章<br>8.1.1 数组的分配和访问<br>        1.buf是在静态区分配的数组，链接后，buf在可执行目标文件数据段中分配了空间<br>        2.aoto型数组分配在栈中，故数组的首址通过EBP来定位<br>8.2.1 结构类型的分配和访问<br>        （1）结构体成员在内存的存放和访问<br>                1.分配在栈中的auto结构型变量的首地址由EBP或ESP来定位<br>                2.分配在静态区的结构型变量首地址是一个确定的静态区地址<br>                3.结构型变量x各成员首地址可用“基址加偏移量”的寻址方式<br>        （2）结构体数据的分配和访问<br>                按值传递：1.开销大，因为需要对结构体成员整体从静态区复制到栈中，需要很多条mov或其他指令，从而执行时间更长，并占用更多空间和代码空间<br>8.3.1 数据的对齐方式<br>        （1）按边界对齐（若一个字为32位）<br>                 1.字地址：4的倍数（低两位为0）<br>                 2.半字地址：2的倍数（低位为0）<br>                 3.字节地址：任意<br>        （2）不按边界对齐<br>                坏处：可能会增加访存次数！<br>8.4.1 越界访问和缓冲区溢出攻击<br>        （1）数组存储区可看成是一个缓冲区，超越数组存储区范围的写入操作称为缓冲区溢出<br>                 例如：对于一个有10个元素的char型数组，其定义发缓冲区有10个字节。若写一个字符串到这个缓冲区，那么只要写入的字符串多于9个字符，就会发生写溢出</p>
+</blockquote>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="https://example.com/2022/08/08/csapp-6/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2022/08/08/csapp-6/" class="post-title-link" itemprop="url">csapp(6)</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+              
+
+              <time title="Created: 2022-08-08 16:44:49 / Modified: 16:45:56" itemprop="dateCreated datePublished" datetime="2022-08-08T16:44:49+08:00">2022-08-08</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <blockquote>
+<p>第6章<br>6.1.1 常用传送指令<br>（1） 传送指令<br>                通用数据传送指令<br>                MOV：一般传送，包括movb、movw和movl等<br>                MOVS：符号扩展与传送，如movsbw、movswl等<br>                MOVZ：零扩展传送，如movzwl、movbl等<br>                XCHG：数据交换<br>                PUSH&#x2F;POP：入栈&#x2F;出栈，如pushl，pushw，popl，popw等<br>（2）地址传送指令<br>               LEA：加载有效地址，如leal（%edx,%eax）,%eax”的功能为<br>                        R[eax]&lt;-R[edx]+R[eax]，执行前，若R[edx]&#x3D;i<br>                        R[eax]&#x3D;j，则指令执行后，R[eax]&#x3D;i+j<br>（3）输入输出指令<br>               IN和OUT：I&#x2F;O端口寄存器之间的交换<br>（4）标志传送指令<br>               PUSHF&#x2F;POPF：将EFLAG压栈，或将栈顶内容送EFLAG<br>6.2.1 常用定点运算指令<br>（1）定点算术运算指令<br>              1.加&#x2F;减运算（影响标志、不区分无&#x2F;带符号）<br>                 ADD：加，包括addb、addw、addl等<br>                 SUB：减，包括subb、subw、subl等<br>（2）加1&#x2F;减1运算（影响除CF以外的标志、不区分无&#x2F;带符号）<br>               INC：加，减包括incb、incw、incl等<br>               DEC：减，包括decb、decw、decl等<br>（3）取负运算（影响标志、若对0取负，则结果为0且CF清0，否则CF置1）<br>               NEG：取负，包括cmpb、cmpw、cmpl等<br>（4）乘&#x2F;除运算（不影响标志，区分无&#x2F;带符号）<br>               MUL&#x2F;IMUL：无符号乘&#x2F;带符号乘<br>               DIV&#x2F;IDIV：带无符号除&#x2F;带符号除</p>
+</blockquote>
+<blockquote>
+<p>6.2.2 加法运算的底层实现举例<br>        1.ALU里包含补码的加&#x2F;减器<br>           带符号整数加减，无符号整数加减。</p>
+</blockquote>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="https://example.com/2022/08/08/csapp-7/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2022/08/08/csapp-7/" class="post-title-link" itemprop="url">csapp(7)</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+              
+
+              <time title="Created: 2022-08-08 16:43:27 / Modified: 16:44:27" itemprop="dateCreated datePublished" datetime="2022-08-08T16:43:27+08:00">2022-08-08</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <blockquote>
+<p>第七章<br>7.1.1 过程调用概述<br>一个c过程的大致结构如下<br>（1）准备阶段<br>               1.形成帧底：push指令和mov指令<br>               2.生成栈帧（如果需要的话）：sub指令或and指令<br>               3.保存现场（如果有被调用者保存寄存器）：mov指令<br>（2）过程（函数）体<br>               1.分配局部变量空间，并赋值<br>               2.具体处理逻辑，如果遇到函数调用时<br>                  准备参数：将实参送栈帧入口参数处<br>                  CALL指令：保存返回地址并转被调用函数<br>               3.在EAX中准备返回参数<br>（3）结束阶段<br>              1.退栈：leave指令或pop指令<br>              2.取返回地址返回：ret指令</p>
+</blockquote>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="https://example.com/2022/07/31/csapp-5/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2022/07/31/csapp-5/" class="post-title-link" itemprop="url">csapp(5)</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+              
+
+              <time title="Created: 2022-07-31 09:34:07 / Modified: 09:35:38" itemprop="dateCreated datePublished" datetime="2022-07-31T09:34:07+08:00">2022-07-31</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <blockquote>
+<p>第五章<br>5.1.1 程序和指令的关系<br>        1、计算机中的指令有微指令，机器指令和伪（宏）指令之分<br>             1.机器指令处于硬件和软件的交界面（相当于一个菜谱指定的一个完整做菜过程）<br>             2.微指令是微程序级指令，属于硬件范畴（相当于洗、切、炒等做菜的“微过程”）<br>             3.伪指令是由若干机器组成的指令序列，属于软件范畴（相当于多个菜谱合成一个“大菜”的过程）<br>             4.汇编指令是机器指令的汇编表示形式即符号表示，机器指令和汇编指令一一对应，他们都与具体机器结构有关，都属于机器级指令。机器指令是一个0&#x2F;1序列，由若干字段组成<br>5.1.2 目标代码和ISA<br>         1、GCC使用举例<br>              目标文件可用”objdump -d text.o”反汇编为汇编语言程序。比如：0:   55   push %ebp。这三个量分别代表“位移量”、“机器指令”、“汇编指令”。并且编译得到的与反汇编得到的汇编指令形式稍有差异。<br>         2、两种目标文件：text.o：可重定位文件、test：可执行目标文件。test.o中代码从地址0开始，test中代码从地址80483d4（虚拟地址）开始<br>         3、ISA在计算机系统中是必不可少的一个抽象层<br>              1.没有它，软件无法使用计算机硬件<br>              2.没有它，一台计算机不能成为“通用计算机”<br>5.2.2 IA-32的寄存器组织<br>        1、6个条件标志：ZF：零标志。SF：符号标志。OF：溢出标志。CF：进&#x2F;借位标志。AF：辅助进位标志（BCD码运算时才有意义）。PF：奇偶标志。<br>        2、3个控制标志：DF：方向标志（自动变址方向是增还是减）。IF：中断允许标志（仅对外部可屏蔽中断有用）。TF：陷阱标志（是否是单步跟踪状态）<br>5.2.3 IA-32的寻址方式<br>        1、寻址方式：如何根据指令所给定信息得到操作数或操作数地址<br>        2、操作数所在位置：1.指令中：立即寻址。2.寄存器中：寄存器寻址。3.存储单元中（属于存储器操作数，按字节编址）：其他寻址方式<br>        3、存储器的寻址方式与微处理器的工作模式有关<br>             两种工作模式：实地址模式和保护模式。<br>             1.实地址模式：基本用不到。<br>             2.保护模式：需要掌握。加电后进入，采用虚拟存储管理，多任务情况下隔离、保护。</p>
+</blockquote>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="https://example.com/2022/07/24/csapp-lab1/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2022/07/24/csapp-lab1/" class="post-title-link" itemprop="url">csapp lab1</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+              
+
+              <time title="Created: 2022-07-24 13:57:57 / Modified: 14:00:07" itemprop="dateCreated datePublished" datetime="2022-07-24T13:57:57+08:00">2022-07-24</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>csapp lab1</p>
+<blockquote>
+<p>1、异或运算<br>     return <del>(</del>x&amp;<del>y)&amp;</del>(x&amp;y);<br>2、最小值<br>     return 1&lt;&lt;31;<br>3、最大值<br>     return !((<del>(x+1)^x))&amp;!!(x+1);<br>4、奇数位是奇数<br>     x&#x3D;x|(x&lt;&lt;8);<br>     x&#x3D;x|(x&lt;&lt;16);<br>5、位与运算<br>     return ~((</del>x)|(<del>y));<br>6、偶数位是偶数<br>     int x&#x3D;85; &#x2F;&#x2F;01010101<br>     int y&#x3D;(x&lt;&lt;8);<br>     x&#x3D;x|y;<br>     y&#x3D;(x&lt;&lt;16);<br>     x&#x3D;x|y;<br>7、将一个32位数字压缩成16位数<br>     int x;<br>     int y&#x3D;x&gt;&gt;15;<br>     return !((y&gt;&gt;16))^y;<br>8、得到-1<br>     return ~0;<br>9、判断是否所有偶数位全是1<br>     int x;<br>     int y&#x3D;0xAA;<br>     y&#x3D;y|y&lt;&lt;8;<br>     y&#x3D;y|y&lt;&lt;16;<br>     rerurn !</del>(x|y);<br>10、交换第m个字节和第n个字节<br>       int nn&#x3D;n&lt;&lt;3;<br>       int mm&#x3D;m&lt;&lt;3;<br>       int p&#x3D;((x&gt;&gt;mm)^(x&gt;&gt;nn))&amp;0xFF;<br>       return x^((p&lt;&lt;mm)|(p&lt;&lt;nn));<br>11、将整数的所有二进制位都置为最低那位<br>       return (x&lt;&lt;31)&gt;&gt;31;<br>12、求得x&#x2F;2^n，并且向0取整<br>       int y&#x3D;(x&gt;&gt;31);<br>       x+&#x3D;y&amp;((1&lt;&lt;n)+<del>0);<br>       x&#x3D;x&gt;&gt;n;<br>       return x;<br>13、返回一个数，这个数的第一位1与传过来的x的第一个1的位置一样 且其他位置都是0<br>       return (</del>x+1)&amp;x;<br>14、获得一个面具（掩码），这个面具（掩码）在对高位和最低位之间为1，其余地方为0<br>       int i&#x3D;<del>0;<br>       return (((i&lt;&lt;highbit)&lt;&lt;1)^(i&lt;&lt;lowbit))&amp;(i&lt;&lt;lowbit);<br>15、判断x&lt;y是否成立<br>       int z&#x3D;</del>y;<br>       return (((x+z+1)&amp;(x^z)|(x&amp;z))&gt;&gt;31)&amp;0x1;<br>16、实现逻辑右移<br>       int y1&#x3D;(((x&gt;&gt;31)&lt;&lt;31)&gt;&gt;(n))&lt;&lt;1;<br>       return (x&gt;&gt;(n))^y1;<br>17、将一个数字乘以2 如果溢出则取Tmax或Tmin<br>       int a&#x3D;x&lt;&lt;1;<br>       int b&#x3D;a&gt;&gt;31;<br>       int c&#x3D;(x^a)&gt;&gt;31;<br>       int tmin&#x3D;1&lt;&lt;31;<br>       return ((<del>c)&amp;a)+(c&amp;(b+tmin));<br>18、判断两个函数相减是否会溢出<br>       int z;<br>       int m&#x3D;y;<br>       y&#x3D;(</del>y)+1;<br>       z&#x3D;x+y;<br>       z&#x3D;(z^x)&amp;(m^x);<br>       return !((z&gt;&gt;31)&amp;1);<br>19、实现！的功能<br>       int y&#x3D;((<del>x)&amp;(x+(</del>0)));<br>       return (y&gt;&gt;31)&amp;1;<br>20、判断是否是2的倍数<br>       return !(((x&amp;(~x+1))^x)|(!x)|(x&gt;&gt;31))；</p>
+</blockquote>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="https://example.com/2022/07/10/csapp-3/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2022/07/10/csapp-3/" class="post-title-link" itemprop="url">csapp(4)</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 2022-07-10 15:10:16" itemprop="dateCreated datePublished" datetime="2022-07-10T15:10:16+08:00">2022-07-10</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2022-07-22 19:29:08" itemprop="dateModified" datetime="2022-07-22T19:29:08+08:00">2022-07-22</time>
+              </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>第四章</p>
+<blockquote>
+<p>4.1.1 整数乘法运算<br>         1、通常高级语言中两个n位整数相乘得到的结果通常也是一个n位整数，也即结果只取2n位乘积中的低n位。<br>              所以在计算机内部，x^2不一定&gt;0：x带符号不一定。<br>                                                                    x为浮点数则一定。<br>         2、如何判断返回的z是正确值，<br>              int z&#x3D;x<em>y;<br>              return z;<br>              在这两条语句中添加当!x||z&#x2F;x&#x3D;&#x3D;y为真时，是正确的<br>         3、x</em>y的高n位可以用来判断溢出，<br>             1.无符号：若高n位全为0，则不溢出，否则溢出。<br>             2.带符号：若高n位全为0或全为1且等于低n位的最高位，则不溢出。<br>         4、堆溢出漏洞<br>              攻击者可构造特殊参数来触发整数溢出，以一段预设信息覆盖一个已分配的堆缓冲区，造成远程服务器崩溃或者改变内存数据并执行任意代码。<br>4.2.1 整数除法运算<br>         1、带符号：n位整数除法以n位整数，除-2^(n-1)&#x2F;-1&#x3D;2^(n-1)外，其余情况都不会发生溢出。<br>         2、整除0的结果无法用一个机器数表示。<br>         3、不能整除时，采用向0舍入，即截断。<br>              无符号：移出的低位直接舍弃。<br>              带符号负整数：加偏移量（2^k-1），再右移k位。<br>                                     如：-14&#x2F;4&#x3D;-3-&gt;(-14+2^2-1)&#x2F;4&#x3D;-3。<br>4.3.1 浮点加减运算<br>        1、两个规格化浮点数分别位A&#x3D;Ma<em>2^Ea,B&#x3D;Mb</em>2Eb<br>             A+-B&#x3D;(Ma+-Mb<em>2^-(Ea-Eb))<em>2Ea<br>             A</em>B&#x3D;(Ma</em>Mb)<em>2^(Ea+Eb)<br>             A&#x2F;B&#x3D;(Ma&#x2F;Mb)<em>2(Ea-Eb)<br>             上述运算结果有可能出现一下几种情况：<br>             阶码上溢：SP最大指数为127。<br>             阶码下溢：SP最小指数为-126。<br>          2、对于一个浮点数除以0<br>                1.#INF00表示正无穷。<br>                 -1.#INF00表示负无穷。<br>          重点：浮点数加减法基本要点：<br>                   假定Xm，Ym分别是X和Y的尾数，Xe和Ye分别是X和Y的阶码<br>                   （1）求阶差：delta e&#x3D;Ye-Xe（若Ye&gt;Xe，结果的阶码为Ye）<br>                   （2）对阶：将Xm右移delta e位，尾数变为Xm</em>2^(Xe-Ye)（保留右移部分附件位）<br>                   （3）尾数加减：Xm</em>2(Xe-Ye)+-Ym<br>                   （4）规格化：<br>                           1.当尾数高位为0，则需左规：尾数左移一次，阶码减1，知道MSB（最高位）为1<br>                              每次阶码减1后，要判断阶码是否下溢（比最小可表示的阶码还要小）<br>                           2.当尾数最高位有进位，需右规：尾数右移一次，阶码加1，知道MSB为1<br>                              每次阶码加1后要判断阶码是否上溢（比最大可表示的阶码还要大）<br>4.3.2 浮点运算的精度<br>        中间结果须在右边加2个附加位<br>        Guard（保护位）：在符号位右边的位。<br>        Round（舍入位）：在保护位右边的位。</p>
+</blockquote>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="https://example.com/2022/07/10/csapp-2/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2022/07/10/csapp-2/" class="post-title-link" itemprop="url">csapp(3)</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 2022-07-10 15:01:38" itemprop="dateCreated datePublished" datetime="2022-07-10T15:01:38+08:00">2022-07-10</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2022-07-21 16:31:56" itemprop="dateModified" datetime="2022-07-21T16:31:56+08:00">2022-07-21</time>
+              </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <blockquote>
+<p>第三章<br>3.1.1 布尔代数和简要逻辑电路<br>         0和1分别代表逻辑值假和真。<br>         三种基本逻辑运算“与”，“或”，“非”，任何一种逻辑表达式都可以写成这三种基本逻辑运算的逻辑组合。例如，异或（只有两个都是不一样的结果才是1，相同就是0）运算的逻辑表达式为：反A与B或A与反B。<br>         组合逻辑电路：没有存储功能，其输出依赖于当前输入。<br>         时序逻辑电路：具有存储功能，其输出不仅依赖于当前输入，还依赖于存储单元的当前状态。<br>         可以利用基本逻辑门电路构成一些具有特定功能的组合逻辑部件（功能部件），如，译码器、编码器、多路选择器、加法器等。<br>         实现一个功能部件的过程：1、用一个真值表描述功能部件的输入和输出之间的关系。2、根据真值表确定逻辑表达式。3.根据逻辑表达式实现逻辑电路。<br>3.1.2 无符号数加法器<br>         1、一位加法器。（全加器）<br>              两个加数为A和B，低位进位为Cin，和为F，向高位进位为Cout。化简后，逻辑表达式如下：F&#x3D;A异或B异或Cin，Cout&#x3D;A与B或A与Cin或B与Cin。<br>         2、n位加法器。<br>              可由n个全加器实现。<br>         重要认识：加法由逻辑部件实现，而其他算术部件都基于加法器和逻辑运算实现，因此，所有算术运算是基于0和1以及逻辑运算实现的！<br>         3、n位带标志加法器。<br>              n位加法器无法用于两个n位带符号的整数相加，无法判断是否溢出。<br>              程序中经常需要比较大小，通过（在加法器中）做减法得到的标志信息来判断。<br>3.1.3 整数加减运算器和ALU（算术逻辑部件）。<br>         ALU：进行基本算术运算与逻辑运算。<br>3.3.1 c语言中的各类运算<br>         1、算术运算：无符号数、带符号数、浮点数的+、-、*、&#x2F;、%运算等。<br>         2、按位运算：<br>              用途：对位串实现掩码（mask）操作或相应的其他处理（主要用于多媒体或状态&#x2F;控制信息进行处理）<br>              操作：按位或：”|“、按位与：”&amp;“、按位取反：”~“、按位异或：”^“。<br>         3、移位运算：<br>              用途：提取部分信息、扩大或缩小2、4、8……倍。<br>              操作：左移：x&lt;&lt;k；右移：x&gt;&gt;k。<br>                        从运算符无法区分逻辑移位还是算术移位，由x的类型确定。<br>                        若x为无符号数：高（低）位移出，低（高）位补0，可能溢出！（若高位移出的是1，则左移时发生溢出）<br>                        若x为带符号整数：算术左移，算术右移。左移：高位移出，低位补0。可能溢出！（若移出的位不等于新的符号位，则溢出）右移：低位移出，高位补符，可能发生有效数据丢失。<br>          4、逻辑运算：<br>               用途：”||“表示”OR“运算。<br>                         ”&amp;&amp;“表示”AND“运算。<br>                         ”！“表示”NOT“运算。<br>          5、位拓展和位截断运算<br>               用途：类型转换时可能需要数据扩展或截断<br>               操作：没有专门操作运算符，根据类型转换前、后数据长短确定是扩展还是截断。<br>                         扩展：短转长。（符号位是1，就扩展16个1补全32位）<br>                         截断：长转短。<br>3.4.1 加减运算生成的标志信息<br>        重要认识1：计算机中所有的运算都基于加法器实现。<br>        重要认识2：加法器不知道所运算的是带符号数还是无符号数。<br>        重要认识3：加法器不判定对错，总是取低n位作为结果，并生成标志信息。<br>        标志：零标志：ZF、溢出标志：OF、进&#x2F;借位标志CF、符号标志SF称为条件标志。</p>
+</blockquote>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="https://example.com/2022/07/10/csapp-1/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2022/07/10/csapp-1/" class="post-title-link" itemprop="url">csapp(2)</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 2022-07-10 14:56:35" itemprop="dateCreated datePublished" datetime="2022-07-10T14:56:35+08:00">2022-07-10</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2022-07-21 16:29:55" itemprop="dateModified" datetime="2022-07-21T16:29:55+08:00">2022-07-21</time>
+              </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <blockquote>
+<p>2.3.6乘以常数<br>       先举个例子：【1011】（数值为11）向左移两位得到【101100】（数值为44）相当于乘了2的2次方<br>       并且由于计算机整数乘法比位移和加法的代价要大得多，许多C语言编译器试图以移位、加法、减法来消除很多整数乘以常数的情况。<br>       再举个例子：假设一个程序包含表达式x<em>14。利用14&#x3D;2^3+2^2+2^1，编译器会将乘法重写为(x&lt;&lt;3)+(x&lt;&lt;2)+(x&lt;&lt;1)，将一个乘法替换为三个位移和两个加法。<br>                    甚至可以等于14&#x3D;2^4-2^1，就可以将乘法重写为(x&lt;&lt;4)-(x&lt;&lt;1)。此时只需要一个减法和两个位移。<br>2.3.7除以2的幂<br>        在大多数机器上除法要比乘法更慢，需要30个或者更多时钟周期<br>        所以除以2的幂也可以用移位来实现，只不过我们是用的是右移，而不是左移。无符号和补码分别用逻辑位移和算数位移来达到目的。<br>        对于使用算术右移的补码机器，C表达式为：(x&lt;0?x+(1&lt;&lt;k)-1:x)&gt;&gt;k。<br>2.3.8关于整数运算的最后思考<br>        计算机执行的整数运算实际上是一种模运算形式。表示数字的有限字长限制了可能的值的取值范围，结果运算可能溢出。我们还看到，补码表示提供了一种既能表示负数也能表示正数的灵活方法，同时使用了与执行无符号算术相同的位级实现，这些运算包括像加法、减法、乘法甚至除法，无论运算数是以无符号形式还是补码形式表示的，都有完全一样或者非常类似的位级行为。<br>2.4浮点数<br>2.4.1二进制小数<br>       数字权的定义与十进制小数点的位置相关，例如：12.34表示数字1</em>10^1+2<em>10^0+3</em>10^-1+4<em>10^-2。<br>2.4.2IEEE浮点表示<br>        IEEE浮点标准用V&#x3D;(-1)^s</em>M*2^E的形式来表示一个数：<br>        1.符号s决定这个数是负数(s&#x3D;1)还是正数(s&#x3D;0)，而对于数值0的符号为解释作为特殊情况处理。<br>        2.尾数M是一个二进制小数，，它的范围是1<del>2-$，或者是0</del>1-$。<br>        3.阶码E的作用是对浮点数加权，这个权重是2的E次方幂（可能是负数）。<br>        将浮点数的位表示划分为三个字段，分别对这些值进行编码：<br>        1.一个单独的符号位s直接编码符号s<br>        2.k位的阶码字段exp&#x3D;ek-1……e1e0编码阶码E。<br>        3.n位小数字段frac&#x3D;fn-1……f1f0编码位数M，但是编码出来的值也依赖于阶码字段的值是否等于0。<br>2.4.4舍入<br>        有四种舍入方式，1.向偶数舍入。2.向零舍入。3.向下舍入。4.向上舍入。<br>2.4.5浮点运算<br>       无符号乘法和除法不具有数学上的结合性和分配性。<br>2.4.6C语言中的浮点数<br>       所有的C语言版本提供两种不同的浮点数据类型：float（单精度）和double（双精度）。<br>       1.从int转换成float，数字不会溢出，但是可能被舍入。<br>       2.从int或float转换成double，因为double有更大的范围，也有更高的精度，所以能够保留精确的数值。<br>       3.从double转换成float，因为范围更小一些，所以值可能溢出成正无穷或负无穷。另外，由于精确度较小，它还可能被舍入。<br>       4.从float或double转换成int，值将会向零舍入。</p>
+</blockquote>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="https://example.com/2022/07/10/csapp/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2022/07/10/csapp/" class="post-title-link" itemprop="url">csapp(1)</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 2022-07-10 14:52:30" itemprop="dateCreated datePublished" datetime="2022-07-10T14:52:30+08:00">2022-07-10</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2022-07-22 19:27:58" itemprop="dateModified" datetime="2022-07-22T19:27:58+08:00">2022-07-22</time>
+              </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <blockquote>
+<p>第一章<br>1、hello.c的一生。<br>     hello.c源程序文本–&gt;预处理器（cpp）–&gt;hell.i修改了的源程序（文本）–&gt;汇编器（as）–&gt;链接器（id）–&gt;hello可执行的二进制目标程序。<br>2、系统的硬件组成。<br>     总线、I&#x2F;O（输入输出）设备、主存、处理器。<br>3、高速缓存至关重要。<br>     从磁盘复制内容到主存，这个过程因为两个部件的读取速度差别较大，所以需要一个高速缓存做衔接来提升整体的读取速度。<br>4、进程，计算机科学中最重要和最成功的概念之一。<br>     进程是操作系统对一个正在运行的程序的抽象。在一个系统中可以同时运行多个进程。<br>5、线程。<br>     一个进程实际上可以由多个称为线程的执行单元组成，每个线程都在进程的上下文中。<br>6、计算机从底层到最上层其实是一层一层封装上去的<br>7、ISA指Instruction Set Architecture，即指令集体系结构，有时简称为指令系统。<br>总结、<br>系统不仅仅只是硬件。系统是硬件和系统软件互相交织的集合体，它们必须共同协作以达到运行应用的最终目的。</p>
+</blockquote>
+<blockquote>
+<p>第二章<br>3、计算机内部所有信息都用二进制即0和1编码。<br>4、机器级数据分两大类<br>     1.数值数据：无符号整数、带符号整数、浮点数（实数）。<br>     2.非数值数据：逻辑数（包括位串）、西文字符和汉字。<br>5、真值和机器数<br>     1.机器数：用0和1编码的计算机内部的01序列。<br>     2.真值：真正的值，即：现实中带正负号的数。<br>6、机器内部用二进制数表示，在外面转换成16进制可以缩短长度，并且转换简单。<br>7、十进制转化为二进制，整数部分短除法，小数部分*2取整数部分、<br>8、一个负数的补码等于对应整数补码各位取反、末尾加一。</p>
+</blockquote>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+
+  
+
+
+
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          Table of Contents
+        </li>
+        <li class="sidebar-nav-overview">
+          Overview
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name"></p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">10</span>
+          <span class="site-state-item-name">posts</span>
+        </a>
+      </div>
+  </nav>
+</div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2022</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder"></span>
+</div>
+  <div class="powered-by">Powered by <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://muse.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Muse</a>
+  </div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/muse.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+</body>
+</html>
