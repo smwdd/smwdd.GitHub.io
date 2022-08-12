@@ -144,6 +144,67 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="https://example.com/2022/08/12/csapp-11/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2022/08/12/csapp-11/" class="post-title-link" itemprop="url">csapp(11)</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+              
+
+              <time title="Created: 2022-08-12 16:03:35 / Modified: 16:04:33" itemprop="dateCreated datePublished" datetime="2022-08-12T16:03:35+08:00">2022-08-12</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <blockquote>
+<p>第十一章<br>11.1.1 符号和符合表的基本概念<br>            （1）符号解析<br>                     目的：将每个模块中应用的符号与某个目标模块中的定义符号建立关联<br>                     1. 每个定义符号在代码或数据段中都被分配了存储空间，将应用符号与定义符号建立关联后，就可在重定位时将引用符号的地址重定为相关联的定义符号的地址。<br>                     2.本地的局部符号在本模块内定义并引用，因此，其解析较为简单，只要与本模块内唯一的定义符号关联即可。<br>                     3.全局符号（外部定义的，内部定义的）的解析涉及到多个模块，故较为复杂<br>11.2.1 全局符号的强弱<br>           1.函数名和已初始化的全局变量名是强符号<br>           2.未初始化的全局变量名是弱符号<br>11.1.3 多重定义全局符号的问题<br>           模块间相互引用容易出错，故应尽量避免使用全局变量<br>           一定要用的话一定要遵循以下规则<br>           1.尽量使用本地变量（static），模块内引用不太会出错<br>           2.全局变量要赋初值，使成为强符号，易查出链接错误<br>           3.外部全局变量使用extern，以示其引用的定义在其他模块<br>           注：多重定义全局变量会造成一些意想不到的错误，而且是默默发生的，编译系统不会警告，并会在程序执行很久后才能表现出来，且远离错误引发处。特别是在一个具有几百个模块的大型软件中，这类错误很难修正</p>
+</blockquote>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
     <link itemprop="mainEntityOfPage" href="https://example.com/2022/08/11/csapp-10/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -712,78 +773,11 @@
   
   
 
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="https://example.com/2022/07/10/csapp/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2022/07/10/csapp/" class="post-title-link" itemprop="url">csapp(1)</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-
-              <time title="Created: 2022-07-10 14:52:30" itemprop="dateCreated datePublished" datetime="2022-07-10T14:52:30+08:00">2022-07-10</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2022-07-22 19:27:58" itemprop="dateModified" datetime="2022-07-22T19:27:58+08:00">2022-07-22</time>
-              </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <blockquote>
-<p>第一章<br>1、hello.c的一生。<br>     hello.c源程序文本–&gt;预处理器（cpp）–&gt;hell.i修改了的源程序（文本）–&gt;汇编器（as）–&gt;链接器（id）–&gt;hello可执行的二进制目标程序。<br>2、系统的硬件组成。<br>     总线、I&#x2F;O（输入输出）设备、主存、处理器。<br>3、高速缓存至关重要。<br>     从磁盘复制内容到主存，这个过程因为两个部件的读取速度差别较大，所以需要一个高速缓存做衔接来提升整体的读取速度。<br>4、进程，计算机科学中最重要和最成功的概念之一。<br>     进程是操作系统对一个正在运行的程序的抽象。在一个系统中可以同时运行多个进程。<br>5、线程。<br>     一个进程实际上可以由多个称为线程的执行单元组成，每个线程都在进程的上下文中。<br>6、计算机从底层到最上层其实是一层一层封装上去的<br>7、ISA指Instruction Set Architecture，即指令集体系结构，有时简称为指令系统。<br>总结、<br>系统不仅仅只是硬件。系统是硬件和系统软件互相交织的集合体，它们必须共同协作以达到运行应用的最终目的。</p>
-</blockquote>
-<blockquote>
-<p>第二章<br>3、计算机内部所有信息都用二进制即0和1编码。<br>4、机器级数据分两大类<br>     1.数值数据：无符号整数、带符号整数、浮点数（实数）。<br>     2.非数值数据：逻辑数（包括位串）、西文字符和汉字。<br>5、真值和机器数<br>     1.机器数：用0和1编码的计算机内部的01序列。<br>     2.真值：真正的值，即：现实中带正负号的数。<br>6、机器内部用二进制数表示，在外面转换成16进制可以缩短长度，并且转换简单。<br>7、十进制转化为二进制，整数部分短除法，小数部分*2取整数部分、<br>8、一个负数的补码等于对应整数补码各位取反、末尾加一。</p>
-</blockquote>
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
 
   
+  <nav class="pagination">
+    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/"><i class="fa fa-angle-right" aria-label="Next page"></i></a>
+  </nav>
 
 
 
@@ -848,7 +842,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">10</span>
+          <span class="site-state-item-count">11</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>

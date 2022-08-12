@@ -20,18 +20,18 @@
     var CONFIG = {"hostname":"example.com","root":"/","scheme":"Muse","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta name="description" content="csapp lab1  1、异或运算     return (x&amp;y)&amp;(x&amp;y);2、最小值     return 1&lt;&lt;31;3、最大值     return !(((x+1)^x))&amp;!!(x+1);4、奇数位是奇数     x&#x3D;x|(x&lt;&lt;8);     x&#x3D;x|(x&lt;&lt;16);5、位与运算     r">
+  <meta name="description" content="第十一章11.1.1 符号和符合表的基本概念            （1）符号解析                     目的：将每个模块中应用的符号与某个目标模块中的定义符号建立关联                     1. 每个定义符号在代码或数据段中都被分配了存储空间，将应用符号与定义符号建立关联后，就可在重定位时将引用符号的地址重定为相关联的定义符号的地址。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="csapp lab1">
-<meta property="og:url" content="https://example.com/2022/07/24/csapp-lab1/index.html">
+<meta property="og:title" content="csapp(11)">
+<meta property="og:url" content="https://example.com/2022/08/12/csapp-11/index.html">
 <meta property="og:site_name">
-<meta property="og:description" content="csapp lab1  1、异或运算     return (x&amp;y)&amp;(x&amp;y);2、最小值     return 1&lt;&lt;31;3、最大值     return !(((x+1)^x))&amp;!!(x+1);4、奇数位是奇数     x&#x3D;x|(x&lt;&lt;8);     x&#x3D;x|(x&lt;&lt;16);5、位与运算     r">
+<meta property="og:description" content="第十一章11.1.1 符号和符合表的基本概念            （1）符号解析                     目的：将每个模块中应用的符号与某个目标模块中的定义符号建立关联                     1. 每个定义符号在代码或数据段中都被分配了存储空间，将应用符号与定义符号建立关联后，就可在重定位时将引用符号的地址重定为相关联的定义符号的地址。">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2022-07-24T05:57:57.000Z">
-<meta property="article:modified_time" content="2022-07-24T06:00:07.719Z">
+<meta property="article:published_time" content="2022-08-12T08:03:35.000Z">
+<meta property="article:modified_time" content="2022-08-12T08:04:33.061Z">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="https://example.com/2022/07/24/csapp-lab1/">
+<link rel="canonical" href="https://example.com/2022/08/12/csapp-11/">
 
 
 <script id="page-configurations">
@@ -44,7 +44,7 @@
   };
 </script>
 
-  <title>csapp lab1 | </title>
+  <title>csapp(11) | </title>
   
 
 
@@ -149,7 +149,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="https://example.com/2022/07/24/csapp-lab1/">
+    <link itemprop="mainEntityOfPage" href="https://example.com/2022/08/12/csapp-11/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -162,7 +162,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          csapp lab1
+          csapp(11)
         </h1>
 
         <div class="post-meta">
@@ -173,7 +173,7 @@
               <span class="post-meta-item-text">Posted on</span>
               
 
-              <time title="Created: 2022-07-24 13:57:57 / Modified: 14:00:07" itemprop="dateCreated datePublished" datetime="2022-07-24T13:57:57+08:00">2022-07-24</time>
+              <time title="Created: 2022-08-12 16:03:35 / Modified: 16:04:33" itemprop="dateCreated datePublished" datetime="2022-08-12T16:03:35+08:00">2022-08-12</time>
             </span>
 
           
@@ -187,9 +187,8 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <p>csapp lab1</p>
-<blockquote>
-<p>1、异或运算<br>     return <del>(</del>x&amp;<del>y)&amp;</del>(x&amp;y);<br>2、最小值<br>     return 1&lt;&lt;31;<br>3、最大值<br>     return !((<del>(x+1)^x))&amp;!!(x+1);<br>4、奇数位是奇数<br>     x&#x3D;x|(x&lt;&lt;8);<br>     x&#x3D;x|(x&lt;&lt;16);<br>5、位与运算<br>     return ~((</del>x)|(<del>y));<br>6、偶数位是偶数<br>     int x&#x3D;85; &#x2F;&#x2F;01010101<br>     int y&#x3D;(x&lt;&lt;8);<br>     x&#x3D;x|y;<br>     y&#x3D;(x&lt;&lt;16);<br>     x&#x3D;x|y;<br>7、将一个32位数字压缩成16位数<br>     int x;<br>     int y&#x3D;x&gt;&gt;15;<br>     return !((y&gt;&gt;16))^y;<br>8、得到-1<br>     return ~0;<br>9、判断是否所有偶数位全是1<br>     int x;<br>     int y&#x3D;0xAA;<br>     y&#x3D;y|y&lt;&lt;8;<br>     y&#x3D;y|y&lt;&lt;16;<br>     rerurn !</del>(x|y);<br>10、交换第m个字节和第n个字节<br>       int nn&#x3D;n&lt;&lt;3;<br>       int mm&#x3D;m&lt;&lt;3;<br>       int p&#x3D;((x&gt;&gt;mm)^(x&gt;&gt;nn))&amp;0xFF;<br>       return x^((p&lt;&lt;mm)|(p&lt;&lt;nn));<br>11、将整数的所有二进制位都置为最低那位<br>       return (x&lt;&lt;31)&gt;&gt;31;<br>12、求得x&#x2F;2^n，并且向0取整<br>       int y&#x3D;(x&gt;&gt;31);<br>       x+&#x3D;y&amp;((1&lt;&lt;n)+<del>0);<br>       x&#x3D;x&gt;&gt;n;<br>       return x;<br>13、返回一个数，这个数的第一位1与传过来的x的第一个1的位置一样 且其他位置都是0<br>       return (</del>x+1)&amp;x;<br>14、获得一个面具（掩码），这个面具（掩码）在对高位和最低位之间为1，其余地方为0<br>       int i&#x3D;<del>0;<br>       return (((i&lt;&lt;highbit)&lt;&lt;1)^(i&lt;&lt;lowbit))&amp;(i&lt;&lt;lowbit);<br>15、判断x&lt;y是否成立<br>       int z&#x3D;</del>y;<br>       return (((x+z+1)&amp;(x^z)|(x&amp;z))&gt;&gt;31)&amp;0x1;<br>16、实现逻辑右移<br>       int y1&#x3D;(((x&gt;&gt;31)&lt;&lt;31)&gt;&gt;(n))&lt;&lt;1;<br>       return (x&gt;&gt;(n))^y1;<br>17、将一个数字乘以2 如果溢出则取Tmax或Tmin<br>       int a&#x3D;x&lt;&lt;1;<br>       int b&#x3D;a&gt;&gt;31;<br>       int c&#x3D;(x^a)&gt;&gt;31;<br>       int tmin&#x3D;1&lt;&lt;31;<br>       return ((<del>c)&amp;a)+(c&amp;(b+tmin));<br>18、判断两个函数相减是否会溢出<br>       int z;<br>       int m&#x3D;y;<br>       y&#x3D;(</del>y)+1;<br>       z&#x3D;x+y;<br>       z&#x3D;(z^x)&amp;(m^x);<br>       return !((z&gt;&gt;31)&amp;1);<br>19、实现！的功能<br>       int y&#x3D;((<del>x)&amp;(x+(</del>0)));<br>       return (y&gt;&gt;31)&amp;1;<br>20、判断是否是2的倍数<br>       return !(((x&amp;(~x+1))^x)|(!x)|(x&gt;&gt;31))；</p>
+        <blockquote>
+<p>第十一章<br>11.1.1 符号和符合表的基本概念<br>            （1）符号解析<br>                     目的：将每个模块中应用的符号与某个目标模块中的定义符号建立关联<br>                     1. 每个定义符号在代码或数据段中都被分配了存储空间，将应用符号与定义符号建立关联后，就可在重定位时将引用符号的地址重定为相关联的定义符号的地址。<br>                     2.本地的局部符号在本模块内定义并引用，因此，其解析较为简单，只要与本模块内唯一的定义符号关联即可。<br>                     3.全局符号（外部定义的，内部定义的）的解析涉及到多个模块，故较为复杂<br>11.2.1 全局符号的强弱<br>           1.函数名和已初始化的全局变量名是强符号<br>           2.未初始化的全局变量名是弱符号<br>11.1.3 多重定义全局符号的问题<br>           模块间相互引用容易出错，故应尽量避免使用全局变量<br>           一定要用的话一定要遵循以下规则<br>           1.尽量使用本地变量（static），模块内引用不太会出错<br>           2.全局变量要赋初值，使成为强符号，易查出链接错误<br>           3.外部全局变量使用extern，以示其引用的定义在其他模块<br>           注：多重定义全局变量会造成一些意想不到的错误，而且是默默发生的，编译系统不会警告，并会在程序执行很久后才能表现出来，且远离错误引发处。特别是在一个具有几百个模块的大型软件中，这类错误很难修正</p>
 </blockquote>
 
     </div>
@@ -206,13 +205,10 @@
         
     <div class="post-nav">
       <div class="post-nav-item">
-    <a href="/2022/07/10/csapp-3/" rel="prev" title="csapp(4)">
-      <i class="fa fa-chevron-left"></i> csapp(4)
+    <a href="/2022/08/11/csapp-10/" rel="prev" title="csapp(10)">
+      <i class="fa fa-chevron-left"></i> csapp(10)
     </a></div>
-      <div class="post-nav-item">
-    <a href="/2022/07/31/csapp-5/" rel="next" title="csapp(5)">
-      csapp(5) <i class="fa fa-chevron-right"></i>
-    </a></div>
+      <div class="post-nav-item"></div>
     </div>
       </footer>
     
