@@ -144,6 +144,73 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="https://example.com/2022/07/10/csapp-1/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2022/07/10/csapp-1/" class="post-title-link" itemprop="url">csapp(2)</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 2022-07-10 14:56:35" itemprop="dateCreated datePublished" datetime="2022-07-10T14:56:35+08:00">2022-07-10</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2022-07-21 16:29:55" itemprop="dateModified" datetime="2022-07-21T16:29:55+08:00">2022-07-21</time>
+              </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <blockquote>
+<p>2.3.6乘以常数<br>       先举个例子：【1011】（数值为11）向左移两位得到【101100】（数值为44）相当于乘了2的2次方<br>       并且由于计算机整数乘法比位移和加法的代价要大得多，许多C语言编译器试图以移位、加法、减法来消除很多整数乘以常数的情况。<br>       再举个例子：假设一个程序包含表达式x<em>14。利用14&#x3D;2^3+2^2+2^1，编译器会将乘法重写为(x&lt;&lt;3)+(x&lt;&lt;2)+(x&lt;&lt;1)，将一个乘法替换为三个位移和两个加法。<br>                    甚至可以等于14&#x3D;2^4-2^1，就可以将乘法重写为(x&lt;&lt;4)-(x&lt;&lt;1)。此时只需要一个减法和两个位移。<br>2.3.7除以2的幂<br>        在大多数机器上除法要比乘法更慢，需要30个或者更多时钟周期<br>        所以除以2的幂也可以用移位来实现，只不过我们是用的是右移，而不是左移。无符号和补码分别用逻辑位移和算数位移来达到目的。<br>        对于使用算术右移的补码机器，C表达式为：(x&lt;0?x+(1&lt;&lt;k)-1:x)&gt;&gt;k。<br>2.3.8关于整数运算的最后思考<br>        计算机执行的整数运算实际上是一种模运算形式。表示数字的有限字长限制了可能的值的取值范围，结果运算可能溢出。我们还看到，补码表示提供了一种既能表示负数也能表示正数的灵活方法，同时使用了与执行无符号算术相同的位级实现，这些运算包括像加法、减法、乘法甚至除法，无论运算数是以无符号形式还是补码形式表示的，都有完全一样或者非常类似的位级行为。<br>2.4浮点数<br>2.4.1二进制小数<br>       数字权的定义与十进制小数点的位置相关，例如：12.34表示数字1</em>10^1+2<em>10^0+3</em>10^-1+4<em>10^-2。<br>2.4.2IEEE浮点表示<br>        IEEE浮点标准用V&#x3D;(-1)^s</em>M*2^E的形式来表示一个数：<br>        1.符号s决定这个数是负数(s&#x3D;1)还是正数(s&#x3D;0)，而对于数值0的符号为解释作为特殊情况处理。<br>        2.尾数M是一个二进制小数，，它的范围是1<del>2-$，或者是0</del>1-$。<br>        3.阶码E的作用是对浮点数加权，这个权重是2的E次方幂（可能是负数）。<br>        将浮点数的位表示划分为三个字段，分别对这些值进行编码：<br>        1.一个单独的符号位s直接编码符号s<br>        2.k位的阶码字段exp&#x3D;ek-1……e1e0编码阶码E。<br>        3.n位小数字段frac&#x3D;fn-1……f1f0编码位数M，但是编码出来的值也依赖于阶码字段的值是否等于0。<br>2.4.4舍入<br>        有四种舍入方式，1.向偶数舍入。2.向零舍入。3.向下舍入。4.向上舍入。<br>2.4.5浮点运算<br>       无符号乘法和除法不具有数学上的结合性和分配性。<br>2.4.6C语言中的浮点数<br>       所有的C语言版本提供两种不同的浮点数据类型：float（单精度）和double（双精度）。<br>       1.从int转换成float，数字不会溢出，但是可能被舍入。<br>       2.从int或float转换成double，因为double有更大的范围，也有更高的精度，所以能够保留精确的数值。<br>       3.从double转换成float，因为范围更小一些，所以值可能溢出成正无穷或负无穷。另外，由于精确度较小，它还可能被舍入。<br>       4.从float或double转换成int，值将会向零舍入。</p>
+</blockquote>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
     <link itemprop="mainEntityOfPage" href="https://example.com/2022/07/10/csapp/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -279,7 +346,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">11</span>
+          <span class="site-state-item-count">12</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
