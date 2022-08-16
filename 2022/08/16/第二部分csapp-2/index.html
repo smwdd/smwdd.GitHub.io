@@ -20,18 +20,18 @@
     var CONFIG = {"hostname":"example.com","root":"/","scheme":"Muse","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta name="description" content="第十二章12.1.1 重定位的基本概念          符号解析完成后，可进行重定位工作，分三步。         1.合并相同的节            将集合E中的所有目标模块中相同的节合并成新节，例如：所有.text节合并作为执行文件中的。text节         2.对集合D中的定义符号进行重定位（确定地址）            确定新节中所有定义符号在虚拟空间中的地址，例如：为函">
+  <meta name="description" content="第二章一、基本术语       1、记忆单元（存储单元&#x2F;存储元&#x2F;位元）（Cell）            具有两种稳态的能够表示二进制数码0和1的物理器件       2、存储单元&#x2F;编址单位            具有相同地址的位构成一个存储单元，也称为一个编址单位       3、存储体&#x2F;存储矩阵&#x2F;存储阵列            所有存储单元构">
 <meta property="og:type" content="article">
-<meta property="og:title" content="csapp(12)">
-<meta property="og:url" content="https://example.com/2022/08/15/csapp-12/index.html">
+<meta property="og:title" content="第二部分csapp(2)">
+<meta property="og:url" content="https://example.com/2022/08/16/%E7%AC%AC%E4%BA%8C%E9%83%A8%E5%88%86csapp-2/index.html">
 <meta property="og:site_name">
-<meta property="og:description" content="第十二章12.1.1 重定位的基本概念          符号解析完成后，可进行重定位工作，分三步。         1.合并相同的节            将集合E中的所有目标模块中相同的节合并成新节，例如：所有.text节合并作为执行文件中的。text节         2.对集合D中的定义符号进行重定位（确定地址）            确定新节中所有定义符号在虚拟空间中的地址，例如：为函">
+<meta property="og:description" content="第二章一、基本术语       1、记忆单元（存储单元&#x2F;存储元&#x2F;位元）（Cell）            具有两种稳态的能够表示二进制数码0和1的物理器件       2、存储单元&#x2F;编址单位            具有相同地址的位构成一个存储单元，也称为一个编址单位       3、存储体&#x2F;存储矩阵&#x2F;存储阵列            所有存储单元构">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2022-08-15T08:33:53.000Z">
-<meta property="article:modified_time" content="2022-08-15T08:34:45.419Z">
+<meta property="article:published_time" content="2022-08-16T08:49:44.000Z">
+<meta property="article:modified_time" content="2022-08-16T08:50:30.968Z">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="https://example.com/2022/08/15/csapp-12/">
+<link rel="canonical" href="https://example.com/2022/08/16/%E7%AC%AC%E4%BA%8C%E9%83%A8%E5%88%86csapp-2/">
 
 
 <script id="page-configurations">
@@ -44,7 +44,7 @@
   };
 </script>
 
-  <title>csapp(12) | </title>
+  <title>第二部分csapp(2) | </title>
   
 
 
@@ -149,7 +149,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="https://example.com/2022/08/15/csapp-12/">
+    <link itemprop="mainEntityOfPage" href="https://example.com/2022/08/16/%E7%AC%AC%E4%BA%8C%E9%83%A8%E5%88%86csapp-2/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -162,7 +162,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          csapp(12)
+          第二部分csapp(2)
         </h1>
 
         <div class="post-meta">
@@ -173,7 +173,7 @@
               <span class="post-meta-item-text">Posted on</span>
               
 
-              <time title="Created: 2022-08-15 16:33:53 / Modified: 16:34:45" itemprop="dateCreated datePublished" datetime="2022-08-15T16:33:53+08:00">2022-08-15</time>
+              <time title="Created: 2022-08-16 16:49:44 / Modified: 16:50:30" itemprop="dateCreated datePublished" datetime="2022-08-16T16:49:44+08:00">2022-08-16</time>
             </span>
 
           
@@ -188,7 +188,7 @@
 
       
         <blockquote>
-<p>第十二章<br>12.1.1 重定位的基本概念<br>          符号解析完成后，可进行重定位工作，分三步。<br>         1.合并相同的节<br>            将集合E中的所有目标模块中相同的节合并成新节，例如：所有.text节合并作为执行文件中的。text节<br>         2.对集合D中的定义符号进行重定位（确定地址）<br>            确定新节中所有定义符号在虚拟空间中的地址，例如：为函数确定首地址，进而确定每条指令的地址，为变量确定首地址<br>            完成这一步后，每条指令和每个变量的地址都可确定<br>         3.对引用符号进行重定位（确定地址）<br>            修改.text节和.data节中对每个符号的引用（地址）<br>            需要用到在.rel_data和.rel_text节中保存的重定位信息<br>12.1.4 符号重定位举例<br>           hello进程的加载运行过程是怎样的<br>          step1：在shell命令行提示符后输入命令：$.&#x2F;hello[enter]<br>          step2：shell命令行解释器构造argv和envp<br>          step3：调用fork()函数，创建一个子进程，与父进程shell完全相同（只读&#x2F;共享），包括只读代码段，可读写数据段，堆以及用户栈等<br>          step4：调用execve()函数，在当前进程（新创建的子进程）的上下文中加载并运行hello程序。将hello中的.text节、.data 节、.bss节等内容加载到当前进程的虚拟地址空间（仅修改当前进程上下文中关于存储映像的一些数据结构，不从磁盘拷贝代码、数据等内容）<br>          step5：调用hello程序的main()函数，hello程序开始在一个进程的上下文中运行<br>12.2.1 可执行文件的加载<br>          1.通过调用execve系统调用函数来调用加载器<br>          2.加载器（loader）根据可执行文件的程序（段）头表中的信息，将可执行文件内的代码和数据从磁盘“拷贝”到存储器中（实际上不会真正拷贝，仅建立一种映射）<br>          3.加载后，将pc（EIP）设定指向Entry point（即符号_start处）、最终执行main函数，以启动程序执行<br>12.3.1 共享库和动态链接概述<br>          一、动态链接用到一个重要概念：<br>                位置无关代码（Position-Independent Code，PIC）<br>                GCC选项-fpic指示生成代码<br>          二、PIC是指：<br>                共享库代码被加载出来的位置可以是不确定的<br>                即使共享库代码的长度发生变化，也不会影响调用它的程序<br>          三、引入PIC的目的<br>                无需修改程序代码即可将共享库加载到任意地址运行<br>          四、共享库内所有引用情况<br>              （1）模块内的过程调用、跳转，采用PC相对偏倚寻址<br>              （2）模块内数据访问，如访问模块内的全局变量和静态变量<br>              （3）模块外的过程调用、跳转<br>              （4）模块外的数据访问，如外部变量的访问</p>
+<p>第二章<br>一、基本术语<br>       1、记忆单元（存储单元&#x2F;存储元&#x2F;位元）（Cell）<br>            具有两种稳态的能够表示二进制数码0和1的物理器件<br>       2、存储单元&#x2F;编址单位<br>            具有相同地址的位构成一个存储单元，也称为一个编址单位<br>       3、存储体&#x2F;存储矩阵&#x2F;存储阵列<br>            所有存储单元构成的存储阵列<br>       4、编址方式<br>            字节编址、按字编址<br>       5、存储器地址寄存器<br>            用于存放主存单元地址的寄存器<br>二、存储器分类<br>       依据不同的特性有多种分类方法<br>       1、按工作性质&#x2F;存取方式分类<br>            （1）随机存取存储器<br>            （2）顺序存取存储器<br>            （3）直接存取存储器<br>            （4）相联存储器<br>       2、按存储介质分类<br>            （1）半导体存储器：双极型，静态MOS型，动态MOS型<br>            （2）磁表面存储器：磁盘、磁带<br>       3、按信息的可更改性分类<br>            （1）读写存储器：可读可写<br>            （2）只读存储器：只能读不能写<br>       4、按断电后信息的可保存性分类<br>            （1）非易失（不挥发）性存储器：信息可一直保留，不需电源维持（ROM、磁表面存储器、光存储器）<br>            （2）易失（挥发）性存储器：电源关闭时信息自动丢失（RAM、Cache）<br>三、内存与外存的关系及比较<br>       1、外存储器<br>            （1）存取速度慢<br>            （2）成本低、容量很大<br>            （3）不与cpu直接连接，先传送到内存，然后才能被cpu使用<br>            （4）属于非易失性存储器，用于长久存放系统中几乎所有的信息<br>       2、内存储器<br>            （1）存取速度快<br>            （2）成本高、容量相对较小<br>            （3）直接与cpu连接，cpu对内存中可直接进行读写操作<br>            （4）属于易失性存储器，用于临时存放正在运行的程序和数据<br>四、层次化存储器结构<br>       1、数据总是在相邻两层之间复制传送<br>            （1）上层更靠近cpu，下层更远离cpu<br>            （2）Block：最小传送单位是定长块，互为副本<br>       2、这种层次化结构是有效的<br>            （1）时间局限性：刚被访问过的单元不久又被访问<br>                    做法：让最近被访问过的信息保留在靠近cpu的存储器中<br>            （2）空间局限性：刚被访问过的单元的临近单元很可能不久被访问<br>                    做法：将刚被访问过的单元的临近单元调到靠近cpu的存储器中</p>
 </blockquote>
 
     </div>
@@ -205,13 +205,10 @@
         
     <div class="post-nav">
       <div class="post-nav-item">
-    <a href="/2022/08/12/csapp-11/" rel="prev" title="csapp(11)">
-      <i class="fa fa-chevron-left"></i> csapp(11)
+    <a href="/2022/08/16/%E7%AC%AC%E4%BA%8C%E9%83%A8%E5%88%86csapp-1/" rel="prev" title="第二部分csapp(1)">
+      <i class="fa fa-chevron-left"></i> 第二部分csapp(1)
     </a></div>
-      <div class="post-nav-item">
-    <a href="/2022/08/16/%E7%AC%AC%E4%BA%8C%E9%83%A8%E5%88%86csapp-1/" rel="next" title="第二部分csapp(1)">
-      第二部分csapp(1) <i class="fa fa-chevron-right"></i>
-    </a></div>
+      <div class="post-nav-item"></div>
     </div>
       </footer>
     

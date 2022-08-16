@@ -144,6 +144,141 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="https://example.com/2022/07/10/csapp-3/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2022/07/10/csapp-3/" class="post-title-link" itemprop="url">csapp(4)</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 2022-07-10 15:10:16" itemprop="dateCreated datePublished" datetime="2022-07-10T15:10:16+08:00">2022-07-10</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2022-07-22 19:29:08" itemprop="dateModified" datetime="2022-07-22T19:29:08+08:00">2022-07-22</time>
+              </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>第四章</p>
+<blockquote>
+<p>4.1.1 整数乘法运算<br>         1、通常高级语言中两个n位整数相乘得到的结果通常也是一个n位整数，也即结果只取2n位乘积中的低n位。<br>              所以在计算机内部，x^2不一定&gt;0：x带符号不一定。<br>                                                                    x为浮点数则一定。<br>         2、如何判断返回的z是正确值，<br>              int z&#x3D;x<em>y;<br>              return z;<br>              在这两条语句中添加当!x||z&#x2F;x&#x3D;&#x3D;y为真时，是正确的<br>         3、x</em>y的高n位可以用来判断溢出，<br>             1.无符号：若高n位全为0，则不溢出，否则溢出。<br>             2.带符号：若高n位全为0或全为1且等于低n位的最高位，则不溢出。<br>         4、堆溢出漏洞<br>              攻击者可构造特殊参数来触发整数溢出，以一段预设信息覆盖一个已分配的堆缓冲区，造成远程服务器崩溃或者改变内存数据并执行任意代码。<br>4.2.1 整数除法运算<br>         1、带符号：n位整数除法以n位整数，除-2^(n-1)&#x2F;-1&#x3D;2^(n-1)外，其余情况都不会发生溢出。<br>         2、整除0的结果无法用一个机器数表示。<br>         3、不能整除时，采用向0舍入，即截断。<br>              无符号：移出的低位直接舍弃。<br>              带符号负整数：加偏移量（2^k-1），再右移k位。<br>                                     如：-14&#x2F;4&#x3D;-3-&gt;(-14+2^2-1)&#x2F;4&#x3D;-3。<br>4.3.1 浮点加减运算<br>        1、两个规格化浮点数分别位A&#x3D;Ma<em>2^Ea,B&#x3D;Mb</em>2Eb<br>             A+-B&#x3D;(Ma+-Mb<em>2^-(Ea-Eb))<em>2Ea<br>             A</em>B&#x3D;(Ma</em>Mb)<em>2^(Ea+Eb)<br>             A&#x2F;B&#x3D;(Ma&#x2F;Mb)<em>2(Ea-Eb)<br>             上述运算结果有可能出现一下几种情况：<br>             阶码上溢：SP最大指数为127。<br>             阶码下溢：SP最小指数为-126。<br>          2、对于一个浮点数除以0<br>                1.#INF00表示正无穷。<br>                 -1.#INF00表示负无穷。<br>          重点：浮点数加减法基本要点：<br>                   假定Xm，Ym分别是X和Y的尾数，Xe和Ye分别是X和Y的阶码<br>                   （1）求阶差：delta e&#x3D;Ye-Xe（若Ye&gt;Xe，结果的阶码为Ye）<br>                   （2）对阶：将Xm右移delta e位，尾数变为Xm</em>2^(Xe-Ye)（保留右移部分附件位）<br>                   （3）尾数加减：Xm</em>2(Xe-Ye)+-Ym<br>                   （4）规格化：<br>                           1.当尾数高位为0，则需左规：尾数左移一次，阶码减1，知道MSB（最高位）为1<br>                              每次阶码减1后，要判断阶码是否下溢（比最小可表示的阶码还要小）<br>                           2.当尾数最高位有进位，需右规：尾数右移一次，阶码加1，知道MSB为1<br>                              每次阶码加1后要判断阶码是否上溢（比最大可表示的阶码还要大）<br>4.3.2 浮点运算的精度<br>        中间结果须在右边加2个附加位<br>        Guard（保护位）：在符号位右边的位。<br>        Round（舍入位）：在保护位右边的位。</p>
+</blockquote>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="https://example.com/2022/07/10/csapp-2/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2022/07/10/csapp-2/" class="post-title-link" itemprop="url">csapp(3)</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 2022-07-10 15:01:38" itemprop="dateCreated datePublished" datetime="2022-07-10T15:01:38+08:00">2022-07-10</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2022-07-21 16:31:56" itemprop="dateModified" datetime="2022-07-21T16:31:56+08:00">2022-07-21</time>
+              </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <blockquote>
+<p>第三章<br>3.1.1 布尔代数和简要逻辑电路<br>         0和1分别代表逻辑值假和真。<br>         三种基本逻辑运算“与”，“或”，“非”，任何一种逻辑表达式都可以写成这三种基本逻辑运算的逻辑组合。例如，异或（只有两个都是不一样的结果才是1，相同就是0）运算的逻辑表达式为：反A与B或A与反B。<br>         组合逻辑电路：没有存储功能，其输出依赖于当前输入。<br>         时序逻辑电路：具有存储功能，其输出不仅依赖于当前输入，还依赖于存储单元的当前状态。<br>         可以利用基本逻辑门电路构成一些具有特定功能的组合逻辑部件（功能部件），如，译码器、编码器、多路选择器、加法器等。<br>         实现一个功能部件的过程：1、用一个真值表描述功能部件的输入和输出之间的关系。2、根据真值表确定逻辑表达式。3.根据逻辑表达式实现逻辑电路。<br>3.1.2 无符号数加法器<br>         1、一位加法器。（全加器）<br>              两个加数为A和B，低位进位为Cin，和为F，向高位进位为Cout。化简后，逻辑表达式如下：F&#x3D;A异或B异或Cin，Cout&#x3D;A与B或A与Cin或B与Cin。<br>         2、n位加法器。<br>              可由n个全加器实现。<br>         重要认识：加法由逻辑部件实现，而其他算术部件都基于加法器和逻辑运算实现，因此，所有算术运算是基于0和1以及逻辑运算实现的！<br>         3、n位带标志加法器。<br>              n位加法器无法用于两个n位带符号的整数相加，无法判断是否溢出。<br>              程序中经常需要比较大小，通过（在加法器中）做减法得到的标志信息来判断。<br>3.1.3 整数加减运算器和ALU（算术逻辑部件）。<br>         ALU：进行基本算术运算与逻辑运算。<br>3.3.1 c语言中的各类运算<br>         1、算术运算：无符号数、带符号数、浮点数的+、-、*、&#x2F;、%运算等。<br>         2、按位运算：<br>              用途：对位串实现掩码（mask）操作或相应的其他处理（主要用于多媒体或状态&#x2F;控制信息进行处理）<br>              操作：按位或：”|“、按位与：”&amp;“、按位取反：”~“、按位异或：”^“。<br>         3、移位运算：<br>              用途：提取部分信息、扩大或缩小2、4、8……倍。<br>              操作：左移：x&lt;&lt;k；右移：x&gt;&gt;k。<br>                        从运算符无法区分逻辑移位还是算术移位，由x的类型确定。<br>                        若x为无符号数：高（低）位移出，低（高）位补0，可能溢出！（若高位移出的是1，则左移时发生溢出）<br>                        若x为带符号整数：算术左移，算术右移。左移：高位移出，低位补0。可能溢出！（若移出的位不等于新的符号位，则溢出）右移：低位移出，高位补符，可能发生有效数据丢失。<br>          4、逻辑运算：<br>               用途：”||“表示”OR“运算。<br>                         ”&amp;&amp;“表示”AND“运算。<br>                         ”！“表示”NOT“运算。<br>          5、位拓展和位截断运算<br>               用途：类型转换时可能需要数据扩展或截断<br>               操作：没有专门操作运算符，根据类型转换前、后数据长短确定是扩展还是截断。<br>                         扩展：短转长。（符号位是1，就扩展16个1补全32位）<br>                         截断：长转短。<br>3.4.1 加减运算生成的标志信息<br>        重要认识1：计算机中所有的运算都基于加法器实现。<br>        重要认识2：加法器不知道所运算的是带符号数还是无符号数。<br>        重要认识3：加法器不判定对错，总是取低n位作为结果，并生成标志信息。<br>        标志：零标志：ZF、溢出标志：OF、进&#x2F;借位标志CF、符号标志SF称为条件标志。</p>
+</blockquote>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
     <link itemprop="mainEntityOfPage" href="https://example.com/2022/07/10/csapp-1/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -346,7 +481,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">12</span>
+          <span class="site-state-item-count">14</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
