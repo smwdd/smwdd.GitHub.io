@@ -144,6 +144,67 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="https://example.com/2022/08/17/%E7%AC%AC%E4%BA%8C%E9%83%A8%E5%88%86csapp-4/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2022/08/17/%E7%AC%AC%E4%BA%8C%E9%83%A8%E5%88%86csapp-4/" class="post-title-link" itemprop="url">第二部分csapp(4)</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+              
+
+              <time title="Created: 2022-08-17 16:15:01 / Modified: 16:15:41" itemprop="dateCreated datePublished" datetime="2022-08-17T16:15:01+08:00">2022-08-17</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <blockquote>
+<p>第四章<br>一、直接映射Cache的特点<br>       1、把主存的每一块映射到一个固定的Cache行（槽）<br>       2、也称模映射<br>       3、映射的关系为：Cache行号&#x3D;主存块号mod Cache行数。举例：4&#x3D;100mod16（假定Cache共有16行）（说明：主存第100快应映射到Cache的第四行中）<br>       4、特点：<br>            （1）容易实现，命中时间短<br>            （2）无需考虑淘汰（替换）问题<br>            （3）但不够灵活，Cache存储空间得不到充分利用，命中率低。例如：需要将主存第0块与第16块同时复制到Cache中，由于它们都只能复制到Cache第0行，即使Cache其他行空闲，也有一个主存块不能写入Cache。这样就会产生频繁的Cache装入。<br>二、全相联映射方式<br>       1、无需Cache索引，因为同时比较所有Cache项的标志<br>       2、没有冲突缺失，因为只要有空闲Cache块，都不会发生冲突<br>三、组相联映射方式<br>       1、n个直接映射的行并行操作<br>       2、操作原理<br>            （1）Cache Index选择其中的一个Cache行集合（共2行）<br>            （2）对这个集合中的两个Cache行的Tag并行进行比较<br>            （3）根据比较结果确定信息在那个行，或不在Cache行中<br>四、三种映射方式的关联度<br>      1、三种映射方式<br>           （1）直接映射：唯一映射（只有一个可能位置）<br>           （2）全相联映射：任意映射（每个位置都有可能）<br>           （3）N-路组相联映射：N-路映射（有N个可能位置）<br>      2、什么叫关联度<br>            一个主存块映射到Cache中时，可能存放的位置个数<br>            （1）直接映射关联度：关联度最低，为1<br>            （2）全相联映射关联度：关联度最高，为Cahce行数<br>            （3）N-路组相联映射关联度：关联度居中，为N<br>       3、关联度和miss rate有什么关系，和命中时间有什么关系<br>            （1）缺失率：直接映射最高，全相联映射最低<br>            （2）命中时间：直接映射最小，全相联映射最大</p>
+</blockquote>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
     <link itemprop="mainEntityOfPage" href="https://example.com/2022/08/16/%E7%AC%AC%E4%BA%8C%E9%83%A8%E5%88%86csapp-2/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -692,68 +753,6 @@
   
   
 
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="https://example.com/2022/07/24/csapp-lab1/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2022/07/24/csapp-lab1/" class="post-title-link" itemprop="url">csapp lab1</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-              
-
-              <time title="Created: 2022-07-24 13:57:57 / Modified: 14:00:07" itemprop="dateCreated datePublished" datetime="2022-07-24T13:57:57+08:00">2022-07-24</time>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>csapp lab1</p>
-<blockquote>
-<p>1、异或运算<br>     return <del>(</del>x&amp;<del>y)&amp;</del>(x&amp;y);<br>2、最小值<br>     return 1&lt;&lt;31;<br>3、最大值<br>     return !((<del>(x+1)^x))&amp;!!(x+1);<br>4、奇数位是奇数<br>     x&#x3D;x|(x&lt;&lt;8);<br>     x&#x3D;x|(x&lt;&lt;16);<br>5、位与运算<br>     return ~((</del>x)|(<del>y));<br>6、偶数位是偶数<br>     int x&#x3D;85; &#x2F;&#x2F;01010101<br>     int y&#x3D;(x&lt;&lt;8);<br>     x&#x3D;x|y;<br>     y&#x3D;(x&lt;&lt;16);<br>     x&#x3D;x|y;<br>7、将一个32位数字压缩成16位数<br>     int x;<br>     int y&#x3D;x&gt;&gt;15;<br>     return !((y&gt;&gt;16))^y;<br>8、得到-1<br>     return ~0;<br>9、判断是否所有偶数位全是1<br>     int x;<br>     int y&#x3D;0xAA;<br>     y&#x3D;y|y&lt;&lt;8;<br>     y&#x3D;y|y&lt;&lt;16;<br>     rerurn !</del>(x|y);<br>10、交换第m个字节和第n个字节<br>       int nn&#x3D;n&lt;&lt;3;<br>       int mm&#x3D;m&lt;&lt;3;<br>       int p&#x3D;((x&gt;&gt;mm)^(x&gt;&gt;nn))&amp;0xFF;<br>       return x^((p&lt;&lt;mm)|(p&lt;&lt;nn));<br>11、将整数的所有二进制位都置为最低那位<br>       return (x&lt;&lt;31)&gt;&gt;31;<br>12、求得x&#x2F;2^n，并且向0取整<br>       int y&#x3D;(x&gt;&gt;31);<br>       x+&#x3D;y&amp;((1&lt;&lt;n)+<del>0);<br>       x&#x3D;x&gt;&gt;n;<br>       return x;<br>13、返回一个数，这个数的第一位1与传过来的x的第一个1的位置一样 且其他位置都是0<br>       return (</del>x+1)&amp;x;<br>14、获得一个面具（掩码），这个面具（掩码）在对高位和最低位之间为1，其余地方为0<br>       int i&#x3D;<del>0;<br>       return (((i&lt;&lt;highbit)&lt;&lt;1)^(i&lt;&lt;lowbit))&amp;(i&lt;&lt;lowbit);<br>15、判断x&lt;y是否成立<br>       int z&#x3D;</del>y;<br>       return (((x+z+1)&amp;(x^z)|(x&amp;z))&gt;&gt;31)&amp;0x1;<br>16、实现逻辑右移<br>       int y1&#x3D;(((x&gt;&gt;31)&lt;&lt;31)&gt;&gt;(n))&lt;&lt;1;<br>       return (x&gt;&gt;(n))^y1;<br>17、将一个数字乘以2 如果溢出则取Tmax或Tmin<br>       int a&#x3D;x&lt;&lt;1;<br>       int b&#x3D;a&gt;&gt;31;<br>       int c&#x3D;(x^a)&gt;&gt;31;<br>       int tmin&#x3D;1&lt;&lt;31;<br>       return ((<del>c)&amp;a)+(c&amp;(b+tmin));<br>18、判断两个函数相减是否会溢出<br>       int z;<br>       int m&#x3D;y;<br>       y&#x3D;(</del>y)+1;<br>       z&#x3D;x+y;<br>       z&#x3D;(z^x)&amp;(m^x);<br>       return !((z&gt;&gt;31)&amp;1);<br>19、实现！的功能<br>       int y&#x3D;((<del>x)&amp;(x+(</del>0)));<br>       return (y&gt;&gt;31)&amp;1;<br>20、判断是否是2的倍数<br>       return !(((x&amp;(~x+1))^x)|(!x)|(x&gt;&gt;31))；</p>
-</blockquote>
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
 
   
   <nav class="pagination">
@@ -823,7 +822,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">14</span>
+          <span class="site-state-item-count">15</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>

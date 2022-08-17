@@ -20,14 +20,18 @@
     var CONFIG = {"hostname":"example.com","root":"/","scheme":"Muse","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta property="og:type" content="website">
-<meta property="og:title">
-<meta property="og:url" content="https://example.com/archives/page/2/index.html">
+  <meta name="description" content="第四章一、直接映射Cache的特点       1、把主存的每一块映射到一个固定的Cache行（槽）       2、也称模映射       3、映射的关系为：Cache行号&#x3D;主存块号mod Cache行数。举例：4&#x3D;100mod16（假定Cache共有16行）（说明：主存第100快应映射到Cache的第四行中）       4、特点：            （1）容易实现，">
+<meta property="og:type" content="article">
+<meta property="og:title" content="第二部分csapp(4)">
+<meta property="og:url" content="https://example.com/2022/08/17/%E7%AC%AC%E4%BA%8C%E9%83%A8%E5%88%86csapp-4/index.html">
 <meta property="og:site_name">
+<meta property="og:description" content="第四章一、直接映射Cache的特点       1、把主存的每一块映射到一个固定的Cache行（槽）       2、也称模映射       3、映射的关系为：Cache行号&#x3D;主存块号mod Cache行数。举例：4&#x3D;100mod16（假定Cache共有16行）（说明：主存第100快应映射到Cache的第四行中）       4、特点：            （1）容易实现，">
 <meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2022-08-17T08:15:01.000Z">
+<meta property="article:modified_time" content="2022-08-17T08:15:41.853Z">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="https://example.com/archives/page/2/">
+<link rel="canonical" href="https://example.com/2022/08/17/%E7%AC%AC%E4%BA%8C%E9%83%A8%E5%88%86csapp-4/">
 
 
 <script id="page-configurations">
@@ -35,12 +39,12 @@
   CONFIG.page = {
     sidebar: "",
     isHome : false,
-    isPost : false,
+    isPost : true,
     lang   : 'en'
   };
 </script>
 
-  <title>Archive | </title>
+  <title>第二部分csapp(4) | </title>
   
 
 
@@ -138,134 +142,80 @@
         <div class="content-wrap">
           
 
-          <div class="content archive">
+          <div class="content post posts-expand">
             
 
+    
   
   
-  
-  <div class="post-block">
-    <div class="posts-collapse">
-      <div class="collection-title">
-        <span class="collection-header">Um..! 15 posts in total. Keep on posting.</span>
-      </div>
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="https://example.com/2022/08/17/%E7%AC%AC%E4%BA%8C%E9%83%A8%E5%88%86csapp-4/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          第二部分csapp(4)
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+              
+
+              <time title="Created: 2022-08-17 16:15:01 / Modified: 16:15:41" itemprop="dateCreated datePublished" datetime="2022-08-17T16:15:01+08:00">2022-08-17</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
 
       
-    <div class="collection-year">
-      <span class="collection-header">2022</span>
-    </div>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2022-07-24T13:57:57+08:00"
-              content="2022-07-24">
-          07-24
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/2022/07/24/csapp-lab1/" itemprop="url">
-            <span itemprop="name">csapp lab1</span>
-          </a>
-      </div>
-
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2022-07-10T15:10:16+08:00"
-              content="2022-07-10">
-          07-10
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/2022/07/10/csapp-3/" itemprop="url">
-            <span itemprop="name">csapp(4)</span>
-          </a>
-      </div>
-
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2022-07-10T15:01:38+08:00"
-              content="2022-07-10">
-          07-10
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/2022/07/10/csapp-2/" itemprop="url">
-            <span itemprop="name">csapp(3)</span>
-          </a>
-      </div>
-
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2022-07-10T14:56:35+08:00"
-              content="2022-07-10">
-          07-10
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/2022/07/10/csapp-1/" itemprop="url">
-            <span itemprop="name">csapp(2)</span>
-          </a>
-      </div>
-
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2022-07-10T14:52:30+08:00"
-              content="2022-07-10">
-          07-10
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/2022/07/10/csapp/" itemprop="url">
-            <span itemprop="name">csapp(1)</span>
-          </a>
-      </div>
-
-    </header>
-  </article>
-
+        <blockquote>
+<p>第四章<br>一、直接映射Cache的特点<br>       1、把主存的每一块映射到一个固定的Cache行（槽）<br>       2、也称模映射<br>       3、映射的关系为：Cache行号&#x3D;主存块号mod Cache行数。举例：4&#x3D;100mod16（假定Cache共有16行）（说明：主存第100快应映射到Cache的第四行中）<br>       4、特点：<br>            （1）容易实现，命中时间短<br>            （2）无需考虑淘汰（替换）问题<br>            （3）但不够灵活，Cache存储空间得不到充分利用，命中率低。例如：需要将主存第0块与第16块同时复制到Cache中，由于它们都只能复制到Cache第0行，即使Cache其他行空闲，也有一个主存块不能写入Cache。这样就会产生频繁的Cache装入。<br>二、全相联映射方式<br>       1、无需Cache索引，因为同时比较所有Cache项的标志<br>       2、没有冲突缺失，因为只要有空闲Cache块，都不会发生冲突<br>三、组相联映射方式<br>       1、n个直接映射的行并行操作<br>       2、操作原理<br>            （1）Cache Index选择其中的一个Cache行集合（共2行）<br>            （2）对这个集合中的两个Cache行的Tag并行进行比较<br>            （3）根据比较结果确定信息在那个行，或不在Cache行中<br>四、三种映射方式的关联度<br>      1、三种映射方式<br>           （1）直接映射：唯一映射（只有一个可能位置）<br>           （2）全相联映射：任意映射（每个位置都有可能）<br>           （3）N-路组相联映射：N-路映射（有N个可能位置）<br>      2、什么叫关联度<br>            一个主存块映射到Cache中时，可能存放的位置个数<br>            （1）直接映射关联度：关联度最低，为1<br>            （2）全相联映射关联度：关联度最高，为Cahce行数<br>            （3）N-路组相联映射关联度：关联度居中，为N<br>       3、关联度和miss rate有什么关系，和命中时间有什么关系<br>            （1）缺失率：直接映射最高，全相联映射最低<br>            （2）命中时间：直接映射最小，全相联映射最大</p>
+</blockquote>
 
     </div>
-  </div>
-  
-  
-  
 
+    
+    
+    
+
+      <footer class="post-footer">
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2022/08/16/%E7%AC%AC%E4%BA%8C%E9%83%A8%E5%88%86csapp-2/" rel="prev" title="第二部分csapp(2)">
+      <i class="fa fa-chevron-left"></i> 第二部分csapp(2)
+    </a></div>
+      <div class="post-nav-item"></div>
+    </div>
+      </footer>
+    
+  </article>
   
-  <nav class="pagination">
-    <a class="extend prev" rel="prev" href="/archives/"><i class="fa fa-angle-left" aria-label="Previous page"></i></a><a class="page-number" href="/archives/">1</a><span class="page-number current">2</span>
-  </nav>
+  
+  
 
 
 
