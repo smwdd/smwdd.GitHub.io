@@ -144,6 +144,67 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="https://example.com/2022/07/31/csapp-5/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2022/07/31/csapp-5/" class="post-title-link" itemprop="url">csapp(5)</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+              
+
+              <time title="Created: 2022-07-31 09:34:07 / Modified: 09:35:38" itemprop="dateCreated datePublished" datetime="2022-07-31T09:34:07+08:00">2022-07-31</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <blockquote>
+<p>第五章<br>5.1.1 程序和指令的关系<br>        1、计算机中的指令有微指令，机器指令和伪（宏）指令之分<br>             1.机器指令处于硬件和软件的交界面（相当于一个菜谱指定的一个完整做菜过程）<br>             2.微指令是微程序级指令，属于硬件范畴（相当于洗、切、炒等做菜的“微过程”）<br>             3.伪指令是由若干机器组成的指令序列，属于软件范畴（相当于多个菜谱合成一个“大菜”的过程）<br>             4.汇编指令是机器指令的汇编表示形式即符号表示，机器指令和汇编指令一一对应，他们都与具体机器结构有关，都属于机器级指令。机器指令是一个0&#x2F;1序列，由若干字段组成<br>5.1.2 目标代码和ISA<br>         1、GCC使用举例<br>              目标文件可用”objdump -d text.o”反汇编为汇编语言程序。比如：0:   55   push %ebp。这三个量分别代表“位移量”、“机器指令”、“汇编指令”。并且编译得到的与反汇编得到的汇编指令形式稍有差异。<br>         2、两种目标文件：text.o：可重定位文件、test：可执行目标文件。test.o中代码从地址0开始，test中代码从地址80483d4（虚拟地址）开始<br>         3、ISA在计算机系统中是必不可少的一个抽象层<br>              1.没有它，软件无法使用计算机硬件<br>              2.没有它，一台计算机不能成为“通用计算机”<br>5.2.2 IA-32的寄存器组织<br>        1、6个条件标志：ZF：零标志。SF：符号标志。OF：溢出标志。CF：进&#x2F;借位标志。AF：辅助进位标志（BCD码运算时才有意义）。PF：奇偶标志。<br>        2、3个控制标志：DF：方向标志（自动变址方向是增还是减）。IF：中断允许标志（仅对外部可屏蔽中断有用）。TF：陷阱标志（是否是单步跟踪状态）<br>5.2.3 IA-32的寻址方式<br>        1、寻址方式：如何根据指令所给定信息得到操作数或操作数地址<br>        2、操作数所在位置：1.指令中：立即寻址。2.寄存器中：寄存器寻址。3.存储单元中（属于存储器操作数，按字节编址）：其他寻址方式<br>        3、存储器的寻址方式与微处理器的工作模式有关<br>             两种工作模式：实地址模式和保护模式。<br>             1.实地址模式：基本用不到。<br>             2.保护模式：需要掌握。加电后进入，采用虚拟存储管理，多任务情况下隔离、保护。</p>
+</blockquote>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
     <link itemprop="mainEntityOfPage" href="https://example.com/2022/07/24/csapp-lab1/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -543,7 +604,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">15</span>
+          <span class="site-state-item-count">16</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
