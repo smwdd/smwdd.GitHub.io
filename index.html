@@ -144,6 +144,67 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="https://example.com/2022/08/23/%E7%AC%AC%E4%B8%89%E9%83%A8%E5%88%86csapp-3/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2022/08/23/%E7%AC%AC%E4%B8%89%E9%83%A8%E5%88%86csapp-3/" class="post-title-link" itemprop="url">第三部分csapp(3)</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+              
+
+              <time title="Created: 2022-08-23 15:29:55 / Modified: 15:30:23" itemprop="dateCreated datePublished" datetime="2022-08-23T15:29:55+08:00">2022-08-23</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <blockquote>
+<p>第三章<br>一、实地址模式下的中断向量表<br>      1、开机后系统首先在实地址模式下工作（只有1MB的寻址空间）<br>      2、开机过程中，需要先准备在实地址模式下的中断向量表和中断服务程序。通常，由固化在主板上一块ROM芯片中的BIOS程序完成<br>      3、BIOS程序检测显卡、键盘、内存等，并在00000H~003FFH区建立中断向量表，在中断向量所指主存区建立相应的中断服务程序<br>      4、BIOS利用INT指令执行特定的中断服务程序把OS从磁盘加载到内存中。例如：BIOS可通过执行int 0X19指令来调用中断向量0X19对应的中断服务程序，将启动盘上的0号磁头对应盘面的0磁道1扇区中的引导程序装入内存<br>      5、BIOS（Basic Input&#x2F;Output System）是基本输入&#x2F;输出系统的简称，是针对具体主板设计的，与安装的操作系统无关<br>      6、BIOS包含各种基本设备启动程序，通过执行BIOS程序，基本设备驱动程序以中断服务程序的形式被加载到内存，以提供基本I／O系统调用<br>　　7、一旦进入保护模式，就不再使用BIOS</p>
+</blockquote>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
     <link itemprop="mainEntityOfPage" href="https://example.com/2022/08/21/%E7%AC%AC%E4%B8%89%E9%83%A8%E5%88%86csapp-2/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -689,67 +750,6 @@
   
   
 
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="https://example.com/2022/08/11/csapp-10/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2022/08/11/csapp-10/" class="post-title-link" itemprop="url">csapp(10)</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-              
-
-              <time title="Created: 2022-08-11 15:02:04 / Modified: 15:03:33" itemprop="dateCreated datePublished" datetime="2022-08-11T15:02:04+08:00">2022-08-11</time>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <blockquote>
-<p>第十章<br>10.2.2 目标文件的三种视图<br>           （1）可重定位目标文件（.o）<br>                   其代码和数据可和其他可重定位文件合并为可执行文件<br>                   1.每个.o文件对应.c文件的生成<br>                   2.每个.o文件代码个数据地址都从0开始<br>           （2）可执行目标文件（linux默认为a.out，windows中的*.exe）<br>                   1.包含的代码和数据可以直接被复制到内存并执行<br>                   2.代码和数据地址为虚拟地址空间中的地址<br>           （3）共享的目标文件（linux中的*.so）<br>                   1.特殊的可重定位目标文件，能在运行时装入到内存并自动被链接，称为贡献库文件<br>                   2Windows中称为Dynamic Link Libraries(DLLs)<br>10.3.1 可重定位文件概述<br>          （1）.symtab节：存放函数名和全局变量（符号表）信息，不包括局部变量<br>          （2）.ret.data节：.data节的重定位信息，用于对模块使用或定义的全局变量进行重定位的信息<br>          （3）.debug节：调试用符号表<br>          （4）strtab节：包含symtab和debug节中符号及节名<br>          （5）Section header table（节头表）：每个节的节名、偏移和大小</p>
-</blockquote>
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
 
   
   <nav class="pagination">
@@ -819,7 +819,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">19</span>
+          <span class="site-state-item-count">20</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
