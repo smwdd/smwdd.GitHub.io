@@ -144,6 +144,128 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="https://example.com/2022/08/24/%E7%AC%AC%E4%B8%89%E9%83%A8%E5%88%86%EF%BC%886%EF%BC%89/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2022/08/24/%E7%AC%AC%E4%B8%89%E9%83%A8%E5%88%86%EF%BC%886%EF%BC%89/" class="post-title-link" itemprop="url">第三部分（6）</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+              
+
+              <time title="Created: 2022-08-24 16:00:03 / Modified: 16:01:16" itemprop="dateCreated datePublished" datetime="2022-08-24T16:00:03+08:00">2022-08-24</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <blockquote>
+<p>第六章<br>一、系统总线的组成<br>       系统总线通常由一组控制线、一组数据线和一组地址线构成。也有些总线没有单独的地址线，地址信息通过数据线来传送，这种情况被称为数据&#x2F;地址复用<br>       1、数据线：承载在源和目部件之间传输的信息。数据线的宽度反映一次能传送的数据的位数<br>       2、地址线：给出源数据或目的数据所在主存单元或I&#x2F;O端口的地址。地址线的宽度反映最大的寻址空间<br>       3、寻址线：控制线对数据线的访问和使用。用来传输定时信号和命令信息。典型的控制信号包括：<br>            时钟：用于总线同步<br>            复位：初始化所有设备<br>            总线请求：表明发出该请求信号的设备要使用总线<br>            总线允许：表明接受到该信号的设备可以使用总线<br>            中断请求：表明某个中断正在请求<br>            中断回答：表明某个中断请求已被接受<br>            存储器读：从指定的主存单元中读数据到数据总线上<br>            存储器写：将数据总线上的数据写到指定的主存单元中<br>            I&#x2F;O读：从指定的I&#x2F;O端口中读数据到数据总线上<br>            I&#x2F;O写：将数据总线上的数据写到指定的I&#x2F;O端口中<br>            传输确认：数据已被接受或已送总线<br>二、处理器总线<br>      1、前端总线<br>            (1)早期Intel架构使用，位于CPU芯片与北桥芯片之间互连<br>            (2)从Pentium Pro开始，FSB采用quad pumped技术：每个总线时钟周期传送4次数据<br>            (3)并行传输、同步定时方式<br>            (4)若工作频率为1333Mhz（实际单位应是MT&#x2F;s，表示每秒传送1333M次，实际时钟频率为333Mhz），总线宽度为64位，则总线带宽为1333MT&#x2F;s乘8B&#x3D;10.5GB&#x2F;s<br>      2、QPI总线<br>            (1)目前在Intel架构中CPU芯片内部核之间、CPU芯片之间、CPU芯片与IOH（I&#x2F;O Hub）芯片之间，都通过QPI总线互连<br>            (2)QPI是基于包交换的串行、高速点对点连接：发送方和接收方各有时钟信号，双方同时传输数据（各有20条数据线），每个QPI数据包含80位，分两个时钟周期传送，每个时钟周期传两次，故每次传20位（16位数据+4位校验位），QPI总线带宽为：每秒传送次数乘2B乘2<br>            (3)QPI总线的速度单位（工作频率）为GT&#x2F;s，表示每秒传送多少G次。若QPI时钟频率为2.4Ghz，则速度为4.8GT&#x2F;s，带宽为4.8G乘2B乘2&#x3D;19.8GB&#x2F;s<br>三、I&#x2F;O总线<br>      I&#x2F;O总线用于为系统中的各种I&#x2F;O设备提供输入输出通道<br>      1、I&#x2F;O总线在物理上可以是主板上的I&#x2F;O扩展槽，如：<br>          第一代：ISA&#x2F;EISA总线、VESA总线，早被淘汰<br>          第二代：PCI、AGP、PCI－X，被逐渐淘汰<br>　　　第三代：PCI－Express（串行总线，主流总线）<br>　　2、PCI－Express总线<br>　　　两个PCI－Express设备之间以一个链路（Link）相连<br>　　　每个链路包含多条通路（lane），可以是1，2，4，8，16或32条<br>　　　PCI－Express1.0下，每条通路的发送和接受速率都是2.5Gｂ／ｓ乘ｎ</p>
+</blockquote>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="https://example.com/2022/08/24/%E7%AC%AC%E4%B8%89%E9%83%A8%E5%88%86%EF%BC%885%EF%BC%89/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2022/08/24/%E7%AC%AC%E4%B8%89%E9%83%A8%E5%88%86%EF%BC%885%EF%BC%89/" class="post-title-link" itemprop="url">第三部分（5）</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+              
+
+              <time title="Created: 2022-08-24 15:59:47 / Modified: 16:00:45" itemprop="dateCreated datePublished" datetime="2022-08-24T15:59:47+08:00">2022-08-24</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <blockquote>
+<p>第五章<br>一、系统I&#x2F;O软件<br>      1、OS在I&#x2F;O子系统中的重要性由I&#x2F;O系统以下三个特性决定<br>           （1）共享性。I&#x2F;O系统被多个程序共享，须由OS对I&#x2F;O资源同意调度管理，以保证用户程序只能访问自己有权限访问的那部分I&#x2F;O设备，并使系统的吞吐率达到最佳<br>           （2）复杂性。I&#x2F;O设备控制细节复杂，需OS专门的驱动程序进行控制，这样可以对用户程序屏蔽设备控制的细节<br>           （3）异步性。不同设备之间速度相差较大，因而，I&#x2F;O设备与主机之间的信息交换使用异步的中断I&#x2F;O方式，中断导致用户态向核态转移，因此必须由OS提供中断服务程序来处理<br>二、带缓冲I&#x2F;O的实现<br>      1、向文件fp中写数据时，FILE中定义的缓冲区为输出流缓冲<br>      2、先按需不断地向缓存写1个（如putc）或n个（如fwrite）字节，遇到换行符\n或缓存被写满1024（缓冲大小BUFSIZ&#x3D;1024字节），则将缓存内容一次写入文件fp中</p>
+</blockquote>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
     <link itemprop="mainEntityOfPage" href="https://example.com/2022/08/23/%E7%AC%AC%E4%B8%89%E9%83%A8%E5%88%86csapp-3/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -628,132 +750,10 @@
   
   
 
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="https://example.com/2022/08/15/csapp-12/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2022/08/15/csapp-12/" class="post-title-link" itemprop="url">csapp(12)</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-              
-
-              <time title="Created: 2022-08-15 16:33:53 / Modified: 16:34:45" itemprop="dateCreated datePublished" datetime="2022-08-15T16:33:53+08:00">2022-08-15</time>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <blockquote>
-<p>第十二章<br>12.1.1 重定位的基本概念<br>          符号解析完成后，可进行重定位工作，分三步。<br>         1.合并相同的节<br>            将集合E中的所有目标模块中相同的节合并成新节，例如：所有.text节合并作为执行文件中的。text节<br>         2.对集合D中的定义符号进行重定位（确定地址）<br>            确定新节中所有定义符号在虚拟空间中的地址，例如：为函数确定首地址，进而确定每条指令的地址，为变量确定首地址<br>            完成这一步后，每条指令和每个变量的地址都可确定<br>         3.对引用符号进行重定位（确定地址）<br>            修改.text节和.data节中对每个符号的引用（地址）<br>            需要用到在.rel_data和.rel_text节中保存的重定位信息<br>12.1.4 符号重定位举例<br>           hello进程的加载运行过程是怎样的<br>          step1：在shell命令行提示符后输入命令：$.&#x2F;hello[enter]<br>          step2：shell命令行解释器构造argv和envp<br>          step3：调用fork()函数，创建一个子进程，与父进程shell完全相同（只读&#x2F;共享），包括只读代码段，可读写数据段，堆以及用户栈等<br>          step4：调用execve()函数，在当前进程（新创建的子进程）的上下文中加载并运行hello程序。将hello中的.text节、.data 节、.bss节等内容加载到当前进程的虚拟地址空间（仅修改当前进程上下文中关于存储映像的一些数据结构，不从磁盘拷贝代码、数据等内容）<br>          step5：调用hello程序的main()函数，hello程序开始在一个进程的上下文中运行<br>12.2.1 可执行文件的加载<br>          1.通过调用execve系统调用函数来调用加载器<br>          2.加载器（loader）根据可执行文件的程序（段）头表中的信息，将可执行文件内的代码和数据从磁盘“拷贝”到存储器中（实际上不会真正拷贝，仅建立一种映射）<br>          3.加载后，将pc（EIP）设定指向Entry point（即符号_start处）、最终执行main函数，以启动程序执行<br>12.3.1 共享库和动态链接概述<br>          一、动态链接用到一个重要概念：<br>                位置无关代码（Position-Independent Code，PIC）<br>                GCC选项-fpic指示生成代码<br>          二、PIC是指：<br>                共享库代码被加载出来的位置可以是不确定的<br>                即使共享库代码的长度发生变化，也不会影响调用它的程序<br>          三、引入PIC的目的<br>                无需修改程序代码即可将共享库加载到任意地址运行<br>          四、共享库内所有引用情况<br>              （1）模块内的过程调用、跳转，采用PC相对偏倚寻址<br>              （2）模块内数据访问，如访问模块内的全局变量和静态变量<br>              （3）模块外的过程调用、跳转<br>              （4）模块外的数据访问，如外部变量的访问</p>
-</blockquote>
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="https://example.com/2022/08/12/csapp-11/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2022/08/12/csapp-11/" class="post-title-link" itemprop="url">csapp(11)</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-              
-
-              <time title="Created: 2022-08-12 16:03:35 / Modified: 16:04:33" itemprop="dateCreated datePublished" datetime="2022-08-12T16:03:35+08:00">2022-08-12</time>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <blockquote>
-<p>第十一章<br>11.1.1 符号和符合表的基本概念<br>            （1）符号解析<br>                     目的：将每个模块中应用的符号与某个目标模块中的定义符号建立关联<br>                     1. 每个定义符号在代码或数据段中都被分配了存储空间，将应用符号与定义符号建立关联后，就可在重定位时将引用符号的地址重定为相关联的定义符号的地址。<br>                     2.本地的局部符号在本模块内定义并引用，因此，其解析较为简单，只要与本模块内唯一的定义符号关联即可。<br>                     3.全局符号（外部定义的，内部定义的）的解析涉及到多个模块，故较为复杂<br>11.2.1 全局符号的强弱<br>           1.函数名和已初始化的全局变量名是强符号<br>           2.未初始化的全局变量名是弱符号<br>11.1.3 多重定义全局符号的问题<br>           模块间相互引用容易出错，故应尽量避免使用全局变量<br>           一定要用的话一定要遵循以下规则<br>           1.尽量使用本地变量（static），模块内引用不太会出错<br>           2.全局变量要赋初值，使成为强符号，易查出链接错误<br>           3.外部全局变量使用extern，以示其引用的定义在其他模块<br>           注：多重定义全局变量会造成一些意想不到的错误，而且是默默发生的，编译系统不会警告，并会在程序执行很久后才能表现出来，且远离错误引发处。特别是在一个具有几百个模块的大型软件中，这类错误很难修正</p>
-</blockquote>
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
 
   
   <nav class="pagination">
-    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/"><i class="fa fa-angle-right" aria-label="Next page"></i></a>
+    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="page-number" href="/page/3/">3</a><a class="extend next" rel="next" href="/page/2/"><i class="fa fa-angle-right" aria-label="Next page"></i></a>
   </nav>
 
 
@@ -819,7 +819,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">20</span>
+          <span class="site-state-item-count">22</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
