@@ -20,18 +20,18 @@
     var CONFIG = {"hostname":"example.com","root":"/","scheme":"Muse","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta name="description" content="第6章6.1.1 常用传送指令（1） 传送指令                通用数据传送指令                MOV：一般传送，包括movb、movw和movl等                MOVS：符号扩展与传送，如movsbw、movswl等                MOVZ：零扩展传送，如movzwl、movbl等                XCHG：数据交换">
+  <meta name="description" content="第七章一、中断处理过程       1、中断响应的结果就是调出相应的中断服务程序       2、中断处理是指执行相应中断服务程序的过程       　　不同的中断源其对应的中断服务程序不同              典型的多重中断处理（中断服务程序）分为三个阶段              （1）先行段（准备阶段）                       1.保护现场及旧屏蔽字">
 <meta property="og:type" content="article">
-<meta property="og:title" content="csapp(6)">
-<meta property="og:url" content="https://example.com/2022/08/08/csapp-6/index.html">
+<meta property="og:title" content="第三部分csapp(7)">
+<meta property="og:url" content="https://example.com/2022/08/25/%E7%AC%AC%E4%B8%89%E9%83%A8%E5%88%86csapp-7/index.html">
 <meta property="og:site_name">
-<meta property="og:description" content="第6章6.1.1 常用传送指令（1） 传送指令                通用数据传送指令                MOV：一般传送，包括movb、movw和movl等                MOVS：符号扩展与传送，如movsbw、movswl等                MOVZ：零扩展传送，如movzwl、movbl等                XCHG：数据交换">
+<meta property="og:description" content="第七章一、中断处理过程       1、中断响应的结果就是调出相应的中断服务程序       2、中断处理是指执行相应中断服务程序的过程       　　不同的中断源其对应的中断服务程序不同              典型的多重中断处理（中断服务程序）分为三个阶段              （1）先行段（准备阶段）                       1.保护现场及旧屏蔽字">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2022-08-08T08:44:49.000Z">
-<meta property="article:modified_time" content="2022-08-08T08:45:56.868Z">
+<meta property="article:published_time" content="2022-08-25T06:39:52.000Z">
+<meta property="article:modified_time" content="2022-08-25T06:40:34.408Z">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="https://example.com/2022/08/08/csapp-6/">
+<link rel="canonical" href="https://example.com/2022/08/25/%E7%AC%AC%E4%B8%89%E9%83%A8%E5%88%86csapp-7/">
 
 
 <script id="page-configurations">
@@ -44,7 +44,7 @@
   };
 </script>
 
-  <title>csapp(6) | </title>
+  <title>第三部分csapp(7) | </title>
   
 
 
@@ -149,7 +149,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="https://example.com/2022/08/08/csapp-6/">
+    <link itemprop="mainEntityOfPage" href="https://example.com/2022/08/25/%E7%AC%AC%E4%B8%89%E9%83%A8%E5%88%86csapp-7/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -162,7 +162,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          csapp(6)
+          第三部分csapp(7)
         </h1>
 
         <div class="post-meta">
@@ -173,7 +173,7 @@
               <span class="post-meta-item-text">Posted on</span>
               
 
-              <time title="Created: 2022-08-08 16:44:49 / Modified: 16:45:56" itemprop="dateCreated datePublished" datetime="2022-08-08T16:44:49+08:00">2022-08-08</time>
+              <time title="Created: 2022-08-25 14:39:52 / Modified: 14:40:34" itemprop="dateCreated datePublished" datetime="2022-08-25T14:39:52+08:00">2022-08-25</time>
             </span>
 
           
@@ -188,10 +188,7 @@
 
       
         <blockquote>
-<p>第6章<br>6.1.1 常用传送指令<br>（1） 传送指令<br>                通用数据传送指令<br>                MOV：一般传送，包括movb、movw和movl等<br>                MOVS：符号扩展与传送，如movsbw、movswl等<br>                MOVZ：零扩展传送，如movzwl、movbl等<br>                XCHG：数据交换<br>                PUSH&#x2F;POP：入栈&#x2F;出栈，如pushl，pushw，popl，popw等<br>（2）地址传送指令<br>               LEA：加载有效地址，如leal（%edx,%eax）,%eax”的功能为<br>                        R[eax]&lt;-R[edx]+R[eax]，执行前，若R[edx]&#x3D;i<br>                        R[eax]&#x3D;j，则指令执行后，R[eax]&#x3D;i+j<br>（3）输入输出指令<br>               IN和OUT：I&#x2F;O端口寄存器之间的交换<br>（4）标志传送指令<br>               PUSHF&#x2F;POPF：将EFLAG压栈，或将栈顶内容送EFLAG<br>6.2.1 常用定点运算指令<br>（1）定点算术运算指令<br>              1.加&#x2F;减运算（影响标志、不区分无&#x2F;带符号）<br>                 ADD：加，包括addb、addw、addl等<br>                 SUB：减，包括subb、subw、subl等<br>（2）加1&#x2F;减1运算（影响除CF以外的标志、不区分无&#x2F;带符号）<br>               INC：加，减包括incb、incw、incl等<br>               DEC：减，包括decb、decw、decl等<br>（3）取负运算（影响标志、若对0取负，则结果为0且CF清0，否则CF置1）<br>               NEG：取负，包括cmpb、cmpw、cmpl等<br>（4）乘&#x2F;除运算（不影响标志，区分无&#x2F;带符号）<br>               MUL&#x2F;IMUL：无符号乘&#x2F;带符号乘<br>               DIV&#x2F;IDIV：带无符号除&#x2F;带符号除</p>
-</blockquote>
-<blockquote>
-<p>6.2.2 加法运算的底层实现举例<br>        1.ALU里包含补码的加&#x2F;减器<br>           带符号整数加减，无符号整数加减。</p>
+<p>第七章<br>一、中断处理过程<br>       1、中断响应的结果就是调出相应的中断服务程序<br>       2、中断处理是指执行相应中断服务程序的过程<br>       　　不同的中断源其对应的中断服务程序不同<br>              典型的多重中断处理（中断服务程序）分为三个阶段<br>              （1）先行段（准备阶段）<br>                       1.保护现场及旧屏蔽字<br>                       2.查明原因（软件识别中断时）<br>                       3.设置新屏蔽字<br>                       （以上处于“关中断”状态不允许被打断）<br>                       4. 开中断<br>              （2）本体段（具体的中断处理阶段）<br>              （3）结束段（恢复阶段）<br>                       1.关中断<br>                       2.恢复现场及旧屏蔽字<br>                       3.清“中断请求”<br>                       （以上处于“禁止中断”状态，不允许被打断）<br>                       4.开中断<br>                       5.中断返回<br>      3、单重中断不允许在中断处理时被新的中断打断，因而直到中断返回前才会开中断。单重中断系统无需设置中断屏蔽字　　<br>二、设备驱动程序<br>       1、每个外设具体的I&#x2F;O操作需通过执行设备驱动程序来完成<br>       2、外设种类繁多，其控制接口不一，导致不同外设的设备驱动千差万别，因而设备驱动程序与设备相关<br>       3、每个外设或每类外设都有一个设备控制器，其中包含各种I&#x2F;O端口。cpu通过执行设备驱动程序中的I&#x2F;O指令访问各种I&#x2F;O端口<br>       4、设备所采用的I&#x2F;O控制方式不同，驱动程序的实现方式也不同<br>             （1）程序直接控制：驱动程序完成用户程序的I&#x2F;O请求后才结束。这种情况下，用户进程在I&#x2F;O过程中不会被阻塞，内核空间的I&#x2F;O软件一直代表用户进程在内核进行I&#x2F;O处理（干等！）<br>             （2）中断控制：驱动程序启动第一次I&#x2F;O操作后，将调出其他进程执行，而当前用户进程被阻塞。在cpu执行其他进程的同时，外设进行I&#x2F;O操作，此时，cpu和外设并行工作。外设完成I&#x2F;O时，向cpu发出中断请求，然后cpu调出相应中断服务程序执行。在中断服务程序中再次启动I&#x2F;O操作<br>             （3）DMA控制：驱动程序对DMA控制器初始化后，便发送“启动DMA传送”命令，外设开始进行I&#x2F;O操作并在外设和主存间传送数据。同时cpu执行处理器调度程序，转其他进程执行，当前用户进程被阻塞。DMA控制器完成所有Ｉ／Ｏ任务后向ｃｐｕ发送一个“ＤＭＡ完成”中断请求信号</p>
 </blockquote>
 
     </div>
@@ -208,13 +205,10 @@
         
     <div class="post-nav">
       <div class="post-nav-item">
-    <a href="/2022/08/08/csapp-7/" rel="prev" title="csapp(7)">
-      <i class="fa fa-chevron-left"></i> csapp(7)
+    <a href="/2022/08/24/%E7%AC%AC%E4%B8%89%E9%83%A8%E5%88%86%EF%BC%886%EF%BC%89/" rel="prev" title="第三部分（6）">
+      <i class="fa fa-chevron-left"></i> 第三部分（6）
     </a></div>
-      <div class="post-nav-item">
-    <a href="/2022/08/09/csapp-8/" rel="next" title="csapp(8)">
-      csapp(8) <i class="fa fa-chevron-right"></i>
-    </a></div>
+      <div class="post-nav-item"></div>
     </div>
       </footer>
     

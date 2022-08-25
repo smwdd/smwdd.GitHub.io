@@ -144,6 +144,67 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="https://example.com/2022/08/25/%E7%AC%AC%E4%B8%89%E9%83%A8%E5%88%86csapp-7/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2022/08/25/%E7%AC%AC%E4%B8%89%E9%83%A8%E5%88%86csapp-7/" class="post-title-link" itemprop="url">第三部分csapp(7)</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+              
+
+              <time title="Created: 2022-08-25 14:39:52 / Modified: 14:40:34" itemprop="dateCreated datePublished" datetime="2022-08-25T14:39:52+08:00">2022-08-25</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <blockquote>
+<p>第七章<br>一、中断处理过程<br>       1、中断响应的结果就是调出相应的中断服务程序<br>       2、中断处理是指执行相应中断服务程序的过程<br>       　　不同的中断源其对应的中断服务程序不同<br>              典型的多重中断处理（中断服务程序）分为三个阶段<br>              （1）先行段（准备阶段）<br>                       1.保护现场及旧屏蔽字<br>                       2.查明原因（软件识别中断时）<br>                       3.设置新屏蔽字<br>                       （以上处于“关中断”状态不允许被打断）<br>                       4. 开中断<br>              （2）本体段（具体的中断处理阶段）<br>              （3）结束段（恢复阶段）<br>                       1.关中断<br>                       2.恢复现场及旧屏蔽字<br>                       3.清“中断请求”<br>                       （以上处于“禁止中断”状态，不允许被打断）<br>                       4.开中断<br>                       5.中断返回<br>      3、单重中断不允许在中断处理时被新的中断打断，因而直到中断返回前才会开中断。单重中断系统无需设置中断屏蔽字　　<br>二、设备驱动程序<br>       1、每个外设具体的I&#x2F;O操作需通过执行设备驱动程序来完成<br>       2、外设种类繁多，其控制接口不一，导致不同外设的设备驱动千差万别，因而设备驱动程序与设备相关<br>       3、每个外设或每类外设都有一个设备控制器，其中包含各种I&#x2F;O端口。cpu通过执行设备驱动程序中的I&#x2F;O指令访问各种I&#x2F;O端口<br>       4、设备所采用的I&#x2F;O控制方式不同，驱动程序的实现方式也不同<br>             （1）程序直接控制：驱动程序完成用户程序的I&#x2F;O请求后才结束。这种情况下，用户进程在I&#x2F;O过程中不会被阻塞，内核空间的I&#x2F;O软件一直代表用户进程在内核进行I&#x2F;O处理（干等！）<br>             （2）中断控制：驱动程序启动第一次I&#x2F;O操作后，将调出其他进程执行，而当前用户进程被阻塞。在cpu执行其他进程的同时，外设进行I&#x2F;O操作，此时，cpu和外设并行工作。外设完成I&#x2F;O时，向cpu发出中断请求，然后cpu调出相应中断服务程序执行。在中断服务程序中再次启动I&#x2F;O操作<br>             （3）DMA控制：驱动程序对DMA控制器初始化后，便发送“启动DMA传送”命令，外设开始进行I&#x2F;O操作并在外设和主存间传送数据。同时cpu执行处理器调度程序，转其他进程执行，当前用户进程被阻塞。DMA控制器完成所有Ｉ／Ｏ任务后向ｃｐｕ发送一个“ＤＭＡ完成”中断请求信号</p>
+</blockquote>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
     <link itemprop="mainEntityOfPage" href="https://example.com/2022/08/24/%E7%AC%AC%E4%B8%89%E9%83%A8%E5%88%86%EF%BC%886%EF%BC%89/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -689,67 +750,6 @@
   
   
 
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="https://example.com/2022/08/16/%E7%AC%AC%E4%BA%8C%E9%83%A8%E5%88%86csapp-1/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2022/08/16/%E7%AC%AC%E4%BA%8C%E9%83%A8%E5%88%86csapp-1/" class="post-title-link" itemprop="url">第二部分csapp(1)</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-              
-
-              <time title="Created: 2022-08-16 16:49:02 / Modified: 16:49:23" itemprop="dateCreated datePublished" datetime="2022-08-16T16:49:02+08:00">2022-08-16</time>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <blockquote>
-<p>第一章<br>一、程序和指令<br>         1、程序和指令的关系<br>              程序由一条一条的指令组成，指令按照顺序存放在内存连续单元<br>         2、程序的执行：周而复始地执行一条一条指令<br>             （1） 正常情况下，指令按其存放顺序执行<br>             （2）遇到需改变程序执行流程时，用相应的转移指令来改变程序执行流程<br>         3、程序执行流的控制<br>               将要执行的指令所在存储单元的地址由程序计数器pc给出，通过改变pc的值来控制执行顺序<br>         4、指令周期：cpu取出并执行一条指令的时间</p>
-</blockquote>
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
 
   
   <nav class="pagination">
@@ -819,7 +819,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">22</span>
+          <span class="site-state-item-count">23</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
