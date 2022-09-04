@@ -144,6 +144,65 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="https://example.com/2022/09/04/pwn%E4%B9%8B%E6%94%BB%E5%87%BB%E6%89%8B%E6%AE%B5/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2022/09/04/pwn%E4%B9%8B%E6%94%BB%E5%87%BB%E6%89%8B%E6%AE%B5/" class="post-title-link" itemprop="url">pwn之攻击手段</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+              
+
+              <time title="Created: 2022-09-04 17:00:26 / Modified: 17:19:59" itemprop="dateCreated datePublished" datetime="2022-09-04T17:00:26+08:00">2022-09-04</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>1.篡改栈帧上的返回地址为攻击者手动传入的shellcode所在缓冲区地址<br>2.初期往往将shellcode直接写入栈缓冲区<br>3.目前由于the NX bits保护措施的开启，栈缓冲区不可执行，故当下的常用手段变为像bss缓冲区写入shellcode或向堆缓冲区写入shellcode并使用mprotect赋予其可执行权限</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
     <link itemprop="mainEntityOfPage" href="https://example.com/2022/08/25/%E7%AC%AC%E4%B8%89%E9%83%A8%E5%88%86csapp-7/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -689,67 +748,6 @@
   
   
 
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="https://example.com/2022/08/16/%E7%AC%AC%E4%BA%8C%E9%83%A8%E5%88%86csapp-2/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2022/08/16/%E7%AC%AC%E4%BA%8C%E9%83%A8%E5%88%86csapp-2/" class="post-title-link" itemprop="url">第二部分csapp(2)</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-              
-
-              <time title="Created: 2022-08-16 16:49:44 / Modified: 16:50:30" itemprop="dateCreated datePublished" datetime="2022-08-16T16:49:44+08:00">2022-08-16</time>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <blockquote>
-<p>第二章<br>一、基本术语<br>       1、记忆单元（存储单元&#x2F;存储元&#x2F;位元）（Cell）<br>            具有两种稳态的能够表示二进制数码0和1的物理器件<br>       2、存储单元&#x2F;编址单位<br>            具有相同地址的位构成一个存储单元，也称为一个编址单位<br>       3、存储体&#x2F;存储矩阵&#x2F;存储阵列<br>            所有存储单元构成的存储阵列<br>       4、编址方式<br>            字节编址、按字编址<br>       5、存储器地址寄存器<br>            用于存放主存单元地址的寄存器<br>二、存储器分类<br>       依据不同的特性有多种分类方法<br>       1、按工作性质&#x2F;存取方式分类<br>            （1）随机存取存储器<br>            （2）顺序存取存储器<br>            （3）直接存取存储器<br>            （4）相联存储器<br>       2、按存储介质分类<br>            （1）半导体存储器：双极型，静态MOS型，动态MOS型<br>            （2）磁表面存储器：磁盘、磁带<br>       3、按信息的可更改性分类<br>            （1）读写存储器：可读可写<br>            （2）只读存储器：只能读不能写<br>       4、按断电后信息的可保存性分类<br>            （1）非易失（不挥发）性存储器：信息可一直保留，不需电源维持（ROM、磁表面存储器、光存储器）<br>            （2）易失（挥发）性存储器：电源关闭时信息自动丢失（RAM、Cache）<br>三、内存与外存的关系及比较<br>       1、外存储器<br>            （1）存取速度慢<br>            （2）成本低、容量很大<br>            （3）不与cpu直接连接，先传送到内存，然后才能被cpu使用<br>            （4）属于非易失性存储器，用于长久存放系统中几乎所有的信息<br>       2、内存储器<br>            （1）存取速度快<br>            （2）成本高、容量相对较小<br>            （3）直接与cpu连接，cpu对内存中可直接进行读写操作<br>            （4）属于易失性存储器，用于临时存放正在运行的程序和数据<br>四、层次化存储器结构<br>       1、数据总是在相邻两层之间复制传送<br>            （1）上层更靠近cpu，下层更远离cpu<br>            （2）Block：最小传送单位是定长块，互为副本<br>       2、这种层次化结构是有效的<br>            （1）时间局限性：刚被访问过的单元不久又被访问<br>                    做法：让最近被访问过的信息保留在靠近cpu的存储器中<br>            （2）空间局限性：刚被访问过的单元的临近单元很可能不久被访问<br>                    做法：将刚被访问过的单元的临近单元调到靠近cpu的存储器中</p>
-</blockquote>
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
 
   
   <nav class="pagination">
@@ -819,7 +817,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">23</span>
+          <span class="site-state-item-count">24</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
