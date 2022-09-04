@@ -144,6 +144,190 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="https://example.com/2022/08/08/csapp-7/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2022/08/08/csapp-7/" class="post-title-link" itemprop="url">csapp(7)</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+              
+
+              <time title="Created: 2022-08-08 16:43:27 / Modified: 16:44:27" itemprop="dateCreated datePublished" datetime="2022-08-08T16:43:27+08:00">2022-08-08</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <blockquote>
+<p>第七章<br>7.1.1 过程调用概述<br>一个c过程的大致结构如下<br>（1）准备阶段<br>               1.形成帧底：push指令和mov指令<br>               2.生成栈帧（如果需要的话）：sub指令或and指令<br>               3.保存现场（如果有被调用者保存寄存器）：mov指令<br>（2）过程（函数）体<br>               1.分配局部变量空间，并赋值<br>               2.具体处理逻辑，如果遇到函数调用时<br>                  准备参数：将实参送栈帧入口参数处<br>                  CALL指令：保存返回地址并转被调用函数<br>               3.在EAX中准备返回参数<br>（3）结束阶段<br>              1.退栈：leave指令或pop指令<br>              2.取返回地址返回：ret指令</p>
+</blockquote>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="https://example.com/2022/07/31/csapp-5/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2022/07/31/csapp-5/" class="post-title-link" itemprop="url">csapp(5)</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+              
+
+              <time title="Created: 2022-07-31 09:34:07 / Modified: 09:35:38" itemprop="dateCreated datePublished" datetime="2022-07-31T09:34:07+08:00">2022-07-31</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <blockquote>
+<p>第五章<br>5.1.1 程序和指令的关系<br>        1、计算机中的指令有微指令，机器指令和伪（宏）指令之分<br>             1.机器指令处于硬件和软件的交界面（相当于一个菜谱指定的一个完整做菜过程）<br>             2.微指令是微程序级指令，属于硬件范畴（相当于洗、切、炒等做菜的“微过程”）<br>             3.伪指令是由若干机器组成的指令序列，属于软件范畴（相当于多个菜谱合成一个“大菜”的过程）<br>             4.汇编指令是机器指令的汇编表示形式即符号表示，机器指令和汇编指令一一对应，他们都与具体机器结构有关，都属于机器级指令。机器指令是一个0&#x2F;1序列，由若干字段组成<br>5.1.2 目标代码和ISA<br>         1、GCC使用举例<br>              目标文件可用”objdump -d text.o”反汇编为汇编语言程序。比如：0:   55   push %ebp。这三个量分别代表“位移量”、“机器指令”、“汇编指令”。并且编译得到的与反汇编得到的汇编指令形式稍有差异。<br>         2、两种目标文件：text.o：可重定位文件、test：可执行目标文件。test.o中代码从地址0开始，test中代码从地址80483d4（虚拟地址）开始<br>         3、ISA在计算机系统中是必不可少的一个抽象层<br>              1.没有它，软件无法使用计算机硬件<br>              2.没有它，一台计算机不能成为“通用计算机”<br>5.2.2 IA-32的寄存器组织<br>        1、6个条件标志：ZF：零标志。SF：符号标志。OF：溢出标志。CF：进&#x2F;借位标志。AF：辅助进位标志（BCD码运算时才有意义）。PF：奇偶标志。<br>        2、3个控制标志：DF：方向标志（自动变址方向是增还是减）。IF：中断允许标志（仅对外部可屏蔽中断有用）。TF：陷阱标志（是否是单步跟踪状态）<br>5.2.3 IA-32的寻址方式<br>        1、寻址方式：如何根据指令所给定信息得到操作数或操作数地址<br>        2、操作数所在位置：1.指令中：立即寻址。2.寄存器中：寄存器寻址。3.存储单元中（属于存储器操作数，按字节编址）：其他寻址方式<br>        3、存储器的寻址方式与微处理器的工作模式有关<br>             两种工作模式：实地址模式和保护模式。<br>             1.实地址模式：基本用不到。<br>             2.保护模式：需要掌握。加电后进入，采用虚拟存储管理，多任务情况下隔离、保护。</p>
+</blockquote>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="https://example.com/2022/07/24/csapp-lab1/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2022/07/24/csapp-lab1/" class="post-title-link" itemprop="url">csapp lab1</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+              
+
+              <time title="Created: 2022-07-24 13:57:57 / Modified: 14:00:07" itemprop="dateCreated datePublished" datetime="2022-07-24T13:57:57+08:00">2022-07-24</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>csapp lab1</p>
+<blockquote>
+<p>1、异或运算<br>     return <del>(</del>x&amp;<del>y)&amp;</del>(x&amp;y);<br>2、最小值<br>     return 1&lt;&lt;31;<br>3、最大值<br>     return !((<del>(x+1)^x))&amp;!!(x+1);<br>4、奇数位是奇数<br>     x&#x3D;x|(x&lt;&lt;8);<br>     x&#x3D;x|(x&lt;&lt;16);<br>5、位与运算<br>     return ~((</del>x)|(<del>y));<br>6、偶数位是偶数<br>     int x&#x3D;85; &#x2F;&#x2F;01010101<br>     int y&#x3D;(x&lt;&lt;8);<br>     x&#x3D;x|y;<br>     y&#x3D;(x&lt;&lt;16);<br>     x&#x3D;x|y;<br>7、将一个32位数字压缩成16位数<br>     int x;<br>     int y&#x3D;x&gt;&gt;15;<br>     return !((y&gt;&gt;16))^y;<br>8、得到-1<br>     return ~0;<br>9、判断是否所有偶数位全是1<br>     int x;<br>     int y&#x3D;0xAA;<br>     y&#x3D;y|y&lt;&lt;8;<br>     y&#x3D;y|y&lt;&lt;16;<br>     rerurn !</del>(x|y);<br>10、交换第m个字节和第n个字节<br>       int nn&#x3D;n&lt;&lt;3;<br>       int mm&#x3D;m&lt;&lt;3;<br>       int p&#x3D;((x&gt;&gt;mm)^(x&gt;&gt;nn))&amp;0xFF;<br>       return x^((p&lt;&lt;mm)|(p&lt;&lt;nn));<br>11、将整数的所有二进制位都置为最低那位<br>       return (x&lt;&lt;31)&gt;&gt;31;<br>12、求得x&#x2F;2^n，并且向0取整<br>       int y&#x3D;(x&gt;&gt;31);<br>       x+&#x3D;y&amp;((1&lt;&lt;n)+<del>0);<br>       x&#x3D;x&gt;&gt;n;<br>       return x;<br>13、返回一个数，这个数的第一位1与传过来的x的第一个1的位置一样 且其他位置都是0<br>       return (</del>x+1)&amp;x;<br>14、获得一个面具（掩码），这个面具（掩码）在对高位和最低位之间为1，其余地方为0<br>       int i&#x3D;<del>0;<br>       return (((i&lt;&lt;highbit)&lt;&lt;1)^(i&lt;&lt;lowbit))&amp;(i&lt;&lt;lowbit);<br>15、判断x&lt;y是否成立<br>       int z&#x3D;</del>y;<br>       return (((x+z+1)&amp;(x^z)|(x&amp;z))&gt;&gt;31)&amp;0x1;<br>16、实现逻辑右移<br>       int y1&#x3D;(((x&gt;&gt;31)&lt;&lt;31)&gt;&gt;(n))&lt;&lt;1;<br>       return (x&gt;&gt;(n))^y1;<br>17、将一个数字乘以2 如果溢出则取Tmax或Tmin<br>       int a&#x3D;x&lt;&lt;1;<br>       int b&#x3D;a&gt;&gt;31;<br>       int c&#x3D;(x^a)&gt;&gt;31;<br>       int tmin&#x3D;1&lt;&lt;31;<br>       return ((<del>c)&amp;a)+(c&amp;(b+tmin));<br>18、判断两个函数相减是否会溢出<br>       int z;<br>       int m&#x3D;y;<br>       y&#x3D;(</del>y)+1;<br>       z&#x3D;x+y;<br>       z&#x3D;(z^x)&amp;(m^x);<br>       return !((z&gt;&gt;31)&amp;1);<br>19、实现！的功能<br>       int y&#x3D;((<del>x)&amp;(x+(</del>0)));<br>       return (y&gt;&gt;31)&amp;1;<br>20、判断是否是2的倍数<br>       return !(((x&amp;(~x+1))^x)|(!x)|(x&gt;&gt;31))；</p>
+</blockquote>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
     <link itemprop="mainEntityOfPage" href="https://example.com/2022/07/10/csapp-3/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -481,7 +665,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">24</span>
+          <span class="site-state-item-count">27</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
