@@ -28,7 +28,7 @@
 <meta property="og:description" content="chesec a.out 作用是检查安全保护措施vmmap作用是查虚拟内存的空间分布shellcraft.sh()可以执行一个&#x2F;bin&#x2F;sh，自动生成shellcodeasm(shellcraft.sh())前面的asm作用是将汇编代码转换成机器码print(asm(shellcraft.sh()))前面的print可以让代码输出的更好看一些print(shellcraft.a">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2022-09-04T09:00:58.000Z">
-<meta property="article:modified_time" content="2022-09-04T09:26:41.678Z">
+<meta property="article:modified_time" content="2022-09-24T02:50:56.630Z">
 <meta name="twitter:card" content="summary">
 
 <link rel="canonical" href="https://example.com/2022/09/04/pwntools/">
@@ -171,10 +171,16 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">Posted on</span>
-              
 
-              <time title="Created: 2022-09-04 17:00:58 / Modified: 17:26:41" itemprop="dateCreated datePublished" datetime="2022-09-04T17:00:58+08:00">2022-09-04</time>
+              <time title="Created: 2022-09-04 17:00:58" itemprop="dateCreated datePublished" datetime="2022-09-04T17:00:58+08:00">2022-09-04</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2022-09-24 10:50:56" itemprop="dateModified" datetime="2022-09-24T10:50:56+08:00">2022-09-24</time>
+              </span>
 
           
 
@@ -187,7 +193,7 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <p>chesec a.out 作用是检查安全保护措施<br>vmmap作用是查虚拟内存的空间分布<br>shellcraft.sh()可以执行一个&#x2F;bin&#x2F;sh，自动生成shellcode<br>asm(shellcraft.sh())前面的asm作用是将汇编代码转换成机器码<br>print(asm(shellcraft.sh()))前面的print可以让代码输出的更好看一些<br>print(shellcraft.amd.sh())中的amd作用是转换成64位，但是在此之前还要加一个：context.arch&#x3D;”amd64”，否则python依旧认为你还在攻击一个32位机器<br>ljust(112,b’A’)作用是从左往右调整自动补齐字节流直到112<br>P32(8048522)作用是将整数打包成32byte数<br>hex(108)作用是将108转换为16进制</p>
+        <p>chesec a.out 作用是检查安全保护措施<br>vmmap作用是查虚拟内存的空间分布<br>shellcraft.sh()可以执行一个&#x2F;bin&#x2F;sh，自动生成shellcode<br>asm(shellcraft.sh())前面的asm作用是将汇编代码转换成机器码<br>print(asm(shellcraft.sh()))前面的print可以让代码输出的更好看一些<br>print(shellcraft.amd.sh())中的amd作用是转换成64位，但是在此之前还要加一个：context.arch&#x3D;”amd64”，否则python依旧认为你还在攻击一个32位机器<br>ljust(112,b’A’)作用是从左往右调整自动补齐字节流直到112<br>P32(8048522)作用是将整数打包成32byte数<br>hex(108)作用是将108转换为16进制<br>echo Zmxh23(一个奇怪的字符串) | base64 -d<br>nc 106.54.129.202 10006（连接端口获取题目）</p>
 
     </div>
 
