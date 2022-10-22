@@ -144,6 +144,65 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="https://example.com/2022/10/22/%E5%AF%86%E7%A0%81/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2022/10/22/%E5%AF%86%E7%A0%81/" class="post-title-link" itemprop="url">密码</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+              
+
+              <time title="Created: 2022-10-22 13:04:56 / Modified: 13:06:28" itemprop="dateCreated datePublished" datetime="2022-10-22T13:04:56+08:00">2022-10-22</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>1、wiresshark<br>   输入data contains “XXXXX”可找到含有该内容的流。</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
     <link itemprop="mainEntityOfPage" href="https://example.com/2022/09/04/%E7%B3%BB%E7%BB%9F%E5%AE%89%E5%85%A8%E4%BF%9D%E6%8A%A4%E6%8E%AA%E6%96%BD/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -687,67 +746,6 @@
   
   
 
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="https://example.com/2022/08/21/%E7%AC%AC%E4%B8%89%E9%83%A8%E5%88%86csapp-1/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2022/08/21/%E7%AC%AC%E4%B8%89%E9%83%A8%E5%88%86csapp-1/" class="post-title-link" itemprop="url">第三部分csapp(1)</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-              
-
-              <time title="Created: 2022-08-21 16:01:23 / Modified: 16:02:27" itemprop="dateCreated datePublished" datetime="2022-08-21T16:01:23+08:00">2022-08-21</time>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <blockquote>
-<p>第一章<br>一、异常控制流<br>       1、cpu会因为遇到内部异常或外部中断等原因而打断程序的正常控制流，转去执行操作系统提供的针对这些特殊事件的处理程序<br>       2、由于某些特殊情况引起用户程序的正常执行被打断所形成的意外控制流称为异常控制流（ECF）<br>       3、异常控制流形成原因<br>            内部异常：缺页、越权、越级、整除0、溢出等（都发生在硬件层）<br>            外部中断：ctrl-c、打印缺纸、DMA结束等（都发生在硬件层）<br>            进程的上下文切换（发生在系统操作层）<br>            一个进程直接发送信号给另一个进程（发生在应用软件层）<br>二、程序和进程<br>       1、程序：指按某种方式组合形成的代码和数据集合，代码即是机器指令序列，因而程序是一种静态概念<br>       2、进程：指程序的一次运行过程。更确切的说，进程是具有独立功能的一个程序关于某个数据集合的一次运行活动，因而进程具有动态含义。同一个程序处理不同数据就是不同进程<br>       3、一个可执行目标文件（即程序）可被加载执行多次，也即，一个程序可能对应多个不同的进程<br>三、引入进程的好处<br>       1、一个独立的逻辑控制流：每个进程拥有一个独立的逻辑控制流，使得程序员可以为自己的程序在执行过程中独占使用处理器<br>       2、一个私有的虚拟地址空间：每个进程拥有一个私有的虚拟地址空间，使得程序员可以为自己的程序在执行过程中独占使用存储器<br>       3、进程的引入简化了程序员的编程以及语言处理系统的处理，即简化了编程、编译、链接、共享和加载等真个过程<br>四、逻辑控制流<br>       1、对于确定的数据集，某进程指令执行地址序列是确定的，称为进程的逻辑控制流<br>       2、对于单处理器系统，进程会轮流使用处理器，即处理器的物理控制流由多个逻辑控制流组成<br>       3、不同进程的逻辑控制流在时间上交错或重叠的情况称为并发<br>五、进程与上下文切换<br>       1、os通过处理器调度让处理器轮流执行多个进程。实现不同进程中指令交替进行的机制称为进程的上下文切换<br>       2、处理器调度等事件会引起用户进程正常执行被打断，因而形成异常控制流<br>       3、进程的上下文切换机制很好的解决了这类异常控制流，实现了从一个进程安全切换到另一个进程执行的过程</p>
-</blockquote>
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
 
   
   <nav class="pagination">
@@ -817,7 +815,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">27</span>
+          <span class="site-state-item-count">28</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>

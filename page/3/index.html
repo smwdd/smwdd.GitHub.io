@@ -144,6 +144,70 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="https://example.com/2022/08/08/csapp-6/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2022/08/08/csapp-6/" class="post-title-link" itemprop="url">csapp(6)</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+              
+
+              <time title="Created: 2022-08-08 16:44:49 / Modified: 16:45:56" itemprop="dateCreated datePublished" datetime="2022-08-08T16:44:49+08:00">2022-08-08</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <blockquote>
+<p>第6章<br>6.1.1 常用传送指令<br>（1） 传送指令<br>                通用数据传送指令<br>                MOV：一般传送，包括movb、movw和movl等<br>                MOVS：符号扩展与传送，如movsbw、movswl等<br>                MOVZ：零扩展传送，如movzwl、movbl等<br>                XCHG：数据交换<br>                PUSH&#x2F;POP：入栈&#x2F;出栈，如pushl，pushw，popl，popw等<br>（2）地址传送指令<br>               LEA：加载有效地址，如leal（%edx,%eax）,%eax”的功能为<br>                        R[eax]&lt;-R[edx]+R[eax]，执行前，若R[edx]&#x3D;i<br>                        R[eax]&#x3D;j，则指令执行后，R[eax]&#x3D;i+j<br>（3）输入输出指令<br>               IN和OUT：I&#x2F;O端口寄存器之间的交换<br>（4）标志传送指令<br>               PUSHF&#x2F;POPF：将EFLAG压栈，或将栈顶内容送EFLAG<br>6.2.1 常用定点运算指令<br>（1）定点算术运算指令<br>              1.加&#x2F;减运算（影响标志、不区分无&#x2F;带符号）<br>                 ADD：加，包括addb、addw、addl等<br>                 SUB：减，包括subb、subw、subl等<br>（2）加1&#x2F;减1运算（影响除CF以外的标志、不区分无&#x2F;带符号）<br>               INC：加，减包括incb、incw、incl等<br>               DEC：减，包括decb、decw、decl等<br>（3）取负运算（影响标志、若对0取负，则结果为0且CF清0，否则CF置1）<br>               NEG：取负，包括cmpb、cmpw、cmpl等<br>（4）乘&#x2F;除运算（不影响标志，区分无&#x2F;带符号）<br>               MUL&#x2F;IMUL：无符号乘&#x2F;带符号乘<br>               DIV&#x2F;IDIV：带无符号除&#x2F;带符号除</p>
+</blockquote>
+<blockquote>
+<p>6.2.2 加法运算的底层实现举例<br>        1.ALU里包含补码的加&#x2F;减器<br>           带符号整数加减，无符号整数加减。</p>
+</blockquote>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
     <link itemprop="mainEntityOfPage" href="https://example.com/2022/08/08/csapp-7/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -665,7 +729,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">27</span>
+          <span class="site-state-item-count">28</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
